@@ -10,8 +10,8 @@ body {
 }
 
 ::selection {
-  color: $bg-color;
-  background-color: $reverse;
+  // color: $bg-color;
+  background-color: transparent;
 }
 
 // Reboot
