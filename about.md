@@ -13,7 +13,10 @@ permalink: /about/
 * 이메일: inuappcenter@gmail.com
 
 ## 멤버
+
+
 ####  Android
+
 * [이채은](https://github.com/chaeeun)
 * [이가윤](https://github.com/Gayoon)
 * [손민재](https://github.com/bungabear)
@@ -28,7 +31,10 @@ permalink: /about/
 * 김도연
 * [정고운](https://github.com/GowoonJ)
 * 윤동관
+
+
 #### iOS
+
 * [김선일](https://github.com/Seonift)
 * 최은영
 * [이준상](https://github.com/zunzunzun)
@@ -41,7 +47,10 @@ permalink: /about/
 * [김수현](https://github.com/suhyun9921)
 * 전예린
 * 유용상
-#### Server
+
+
+#### Server  
+
 * 권순재
 * [최찬호](https://github.com/ftilrftilr12)
 * 권대우
@@ -50,7 +59,10 @@ permalink: /about/
 * [손혜선](https://github.com/SonHyeSeon)
 * 한현우
 * [노창환](https://github.com/nohchanghwan)
-#### Design
+
+
+#### Design  
+
 * [서 혁](https://github.com/spemer)
 * [김진웅](https://github.com/Woongdesign)
 * 김민아
