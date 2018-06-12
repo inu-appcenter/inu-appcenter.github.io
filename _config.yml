@@ -3,7 +3,7 @@ title: INU Appcenter # your site title
 author: inu-appcenter # You :P
 description: > # Meta description of Homepage
   INU Appcenter is an academic club focused on mobile and web application, based in Incheon National University.
-baseurl: "/sleek" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://inu-appcenter.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # SEO PLUGIN
