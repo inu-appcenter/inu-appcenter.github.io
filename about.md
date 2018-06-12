@@ -14,24 +14,22 @@ permalink: /about/
 
 ## 멤버
 
-
-####  Android
+#### Android
 
 * [이채은](https://github.com/chaeeun)
 * [이가윤](https://github.com/Gayoon)
 * [손민재](https://github.com/bungabear)
 * [김성민](https://github.com/pinokio531)
 * [김승현](https://github.com/coee)
-* 김근영 
+* 김근영
 * [이동언](https://github.com/ide127)
-* 송진석 
-* 김바른 
-* 김지선 
-* 최아현 
+* 송진석
+* 김바른
+* 김지선
+* 최아현
 * 김도연
 * [정고운](https://github.com/GowoonJ)
 * 윤동관
-
 
 #### iOS
 
@@ -48,8 +46,7 @@ permalink: /about/
 * 전예린
 * 유용상
 
-
-#### Server  
+#### Server
 
 * 권순재
 * [최찬호](https://github.com/ftilrftilr12)
@@ -60,8 +57,7 @@ permalink: /about/
 * 한현우
 * [노창환](https://github.com/nohchanghwan)
 
-
-#### Design  
+#### Design
 
 * [서 혁](https://github.com/spemer)
 * [김진웅](https://github.com/Woongdesign)
