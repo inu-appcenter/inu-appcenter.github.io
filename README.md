@@ -15,6 +15,7 @@
 #### Android
 
 - [이채은](https://github.com/chaeeun)
+- [황견주](https://github.com/Kyun-J)
 - [이가윤](https://github.com/Gayoon)
 - [손민재](https://github.com/bungabear)
 - [김성민](https://github.com/pinokio531)
