@@ -2,7 +2,7 @@ window.jQuery = window.$ = require( "jquery" );
 require( "velocity-animate/velocity.js" );
 require( "lazysizes" );
 require( "lazysizes/plugins/unveilhooks/ls.unveilhooks.js" );
-
+// require( "./kakao" );
 
 // Jquery & Velocity JS included in GULP
 $( document ).ready( function() {
@@ -22,6 +22,26 @@ $( window ).resize( function() {
     $( ".header__links" ).removeAttr( "style" ); // If mobile nav was collapsed, make sure it's show on DESK
     $( ".header__overlay" ).remove(); // Remove mobile navigation overlay in case it was opened
 } );
+
+
+// dotenv.connect({
+//     kakaoUrl: process.env.KAKAO_URL,
+//     kakaoKey: process.env.KAKAO_KEY
+// });
+
+// Kakao API
+// (function(){
+//     var getClassSite = document.getElementsByClassName('footer')[0];
+
+//     if(getClassSite){
+//         var setKakaoBtn = document.createElement("div");
+//         setKakaoBtn.setAttribute('id', 'plusfriend-addfriend-button');
+//         setKakaoBtn.setAttribute('onclick', 'plusFriendChat()');
+    
+//         getClassSite.appendChild(setKakaoBtn);
+//     }
+// })();
+
 
 /*-------------------------------------------------------------------------*/
 /* MOBILE NAVIGATION */
@@ -245,17 +265,7 @@ function addErrorData( element, error ) {
     element.after( "<span class='error-data'>" + error + "</span>" );
 }
 
-// Kakao API
-(function(){
-    var getClassSite = document.getElementsByClassName('site')[0];
 
-    if(getClassSite){
-        var setKakaoBtn = document.createElement("div");
-        setKakaoBtn.setAttribute('id', 'plusfriend-addfriend-button');
-    
-        getClassSite.appendChild(setKakaoBtn);
-    }
-});
 
 /*-------------------------------------------------------------------------*/
 /* AJAX FORM SUBMIT
