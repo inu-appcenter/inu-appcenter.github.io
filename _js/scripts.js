@@ -3,6 +3,7 @@ require( "velocity-animate/velocity.js" );
 require( "lazysizes" );
 require( "lazysizes/plugins/unveilhooks/ls.unveilhooks.js" );
 
+
 // Jquery & Velocity JS included in GULP
 $( document ).ready( function() {
     toggleMobileNav();
@@ -244,6 +245,17 @@ function addErrorData( element, error ) {
     element.after( "<span class='error-data'>" + error + "</span>" );
 }
 
+// Kakao API
+(function(){
+    var getClassSite = document.getElementsByClassName('site')[0];
+
+    if(getClassSite){
+        var setKakaoBtn = document.createElement("div");
+        setKakaoBtn.setAttribute('id', 'plusfriend-addfriend-button');
+    
+        getClassSite.appendChild(setKakaoBtn);
+    }
+});
 
 /*-------------------------------------------------------------------------*/
 /* AJAX FORM SUBMIT

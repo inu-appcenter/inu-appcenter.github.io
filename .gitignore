@@ -9,6 +9,8 @@ npm-debug.log
 *.js.map
 maps
 
+.env
+
 # OS Generated files #
 ######################
 *.DS_Store

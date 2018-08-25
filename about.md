@@ -25,12 +25,12 @@ permalink: /about/
 * 김근영
 * [이동언](https://github.com/ide127)
 * 송진석
-* 김바른
+* [김바른](https://github.com/qkfms2298)
 * 김지선
-* 최아현
+* [최아현](https://github.com/ChoiAhHyun)
 * 김도연
 * [정고운](https://github.com/GowoonJ)
-* 윤동관
+* [윤동관](https://github.com/YoonDongGwan)
 
 #### iOS
 
@@ -42,7 +42,7 @@ permalink: /about/
 * [김재희](https://github.com/jaehui327)
 * [황동균](https://github.com/dongdong97)
 * 김민지
-* 이형주
+* [이형주](https://github.com/hyungju2)
 * [김수현](https://github.com/suhyun9921)
 * 전예린
 * 유용상
@@ -53,17 +53,17 @@ permalink: /about/
 * [최찬호](https://github.com/ftilrftilr12)
 * 권대우
 * [임동완](https://github.com/doukong)
-* 박소현
+* [박소현](https://github.com/sohyeonpark0901)
 * [손혜선](https://github.com/SonHyeSeon)
 * 한현우
 * [노창환](https://github.com/nohchanghwan)
+* [임헌준](https://github.com/Limheonjun)
 
 #### Design
 
 * [서 혁](https://github.com/spemer)
 * [김진웅](https://github.com/Woongdesign)
 * 김민아
-* 임헌준
 * 남효신
 * 김리현
 * 정준기

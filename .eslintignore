@@ -1,4 +1,6 @@
 gulpfile.js
 sw.js
+scripts.js
+kakao.js
 _includes/sw.js
 _includes/loadCss.js

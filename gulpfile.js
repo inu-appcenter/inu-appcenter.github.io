@@ -6,6 +6,7 @@ const cp = require('child_process');
 const notify = require('gulp-notify');
 const size = require('gulp-size');
 
+
 // Basic workflow plugins
 const browserSync = require('browser-sync');
 const browserify = require('browserify');
@@ -31,6 +32,13 @@ const responsive = require('gulp-responsive');
 const $ = require('gulp-load-plugins')();
 const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
+
+// dotenv
+// const dotenv = require('dotenv').config();
+// dotenv.connect({
+//   kakaoUrl: process.env.KAKAO_URL,
+//   kakaoKey: process.env.KAKAO_KEY
+// });
 
 const src = {
   css: '_sass/jekyll-sleek.scss',
