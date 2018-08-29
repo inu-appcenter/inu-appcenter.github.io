@@ -1,6 +1,6 @@
 <template lang="pug">
   div#univcam
-    UnivCam
+    UnivCam#markdown
 </template>
 
 <script>

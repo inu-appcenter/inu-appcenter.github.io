@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Home from '../pages/Home'
-import Contact from '../pages/Contact'
-import About from '../pages/About'
+import Home from '@/pages/Home'
+import Contact from '@/pages/Contact'
+import About from '@/pages/About'
 
-import UnivCam from '../pages/projects/UnivCam'
+import UnivCam from '@/pages/projects/UnivCam'
 
 
 Vue.use(VueRouter)

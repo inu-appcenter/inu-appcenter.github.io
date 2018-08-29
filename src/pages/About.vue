@@ -1,7 +1,7 @@
 <template lang="pug">
   div#about
     div.alt__container
-      About
+      About#markdown
 </template>
 
 <script>
