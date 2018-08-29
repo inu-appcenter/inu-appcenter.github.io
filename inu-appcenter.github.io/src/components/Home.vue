@@ -1,15 +1,20 @@
 <template lang="pug">
   div#home
-    | asdf
+    Kakao
 </template>
 
 <script>
+import Kakao from './Kakao'
+
 export default {
   name: 'home',
   data () {
     return {
 
     }
+  },
+  components: {
+    Kakao
   }
 }
 </script>

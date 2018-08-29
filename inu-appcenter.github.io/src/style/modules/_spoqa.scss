@@ -1,0 +1,38 @@
+$baseURI: '/src/fonts/SpoqaHanSans';
+
+
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  src: local('Spoqa Han Sans Bold'),
+  url('#{$baseURI}' + 'Bold.woff2') format('woff2'),
+  url('#{$baseURI}' + 'Bold.woff') format('woff'),
+  url('#{$baseURI}' + 'Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 400;
+  src: local('Spoqa Han Sans Regular'),
+  url('#{$baseURI}' + 'Regular.woff2') format('woff2'),
+  url('#{$baseURI}' + 'Regular.woff') format('woff'),
+  url('#{$baseURI}' + 'Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 300;
+  src: local('Spoqa Han Sans Light'),
+  url('#{$baseURI}' + 'Light.woff2') format('woff2'),
+  url('#{$baseURI}' + 'Light.woff') format('woff'),
+  url('#{$baseURI}' + 'Light.ttf') format('truetype');
+}
+
+// @font-face {
+//   font-family: 'Spoqa Han Sans';
+//   font-weight: 100;
+//   src: local('Spoqa Han Sans Thin'),
+//   url('#{$baseURI}' + 'Thin.woff2') format('woff2'),
+//   url('#{$baseURI}' + 'Thin.woff') format('woff'),
+//   url('#{$baseURI}' + 'Thin.ttf') format('truetype');
+// }

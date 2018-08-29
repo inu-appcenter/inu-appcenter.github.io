@@ -1,0 +1,87 @@
+/* ==============================
+  mixin default font
+============================== */
+@mixin font-stack-html() {
+  font-family: 'Spoqa Han Sans', Sans-serif;
+  -moz-font-family: 'Spoqa Han Sans', Sans-serif;
+  -webkit-font-family: 'Spoqa Han Sans', Sans-serif;
+}
+
+
+/* ==============================
+  text rendering
+============================== */
+@mixin font-settings() {
+  direction: ltr;
+          font-feature-settings: 'liga';
+     -moz-font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale !important;
+   -webkit-font-smoothing: antialiased !important;
+          text-rendering:  optimizeLegibility !important;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip: ink;
+}
+
+
+/* ==============================
+  default font-size, line-height
+============================== */
+@function calculateRem($size) {
+  $remSize: $size / $grid4x;
+  @return $remSize * 1rem;
+}
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+@mixin line-height($size) {
+  line-height: $size * 1.6;
+  line-height: calculateRem($size) * 1.6;
+}
+
+
+/* ==============================
+  normalize css
+============================== */
+body {
+  outline: none;
+  color: $text333;
+  @include font-settings();
+  @include font-stack-html();
+  @include font-size($grid4x);
+  @include line-height($grid4x);
+}
+
+
+/* ==============================
+    fonts
+============================== */
+a {
+  color: $brand-yellow;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 900;
+  text-align: center;
+  @include font-size($grid8x);
+  @include line-height($grid8x);
+}
+
+h3 {
+  font-weight: 900;
+  @include font-size($grid5x);
+  @include line-height($grid5x);
+}
+
+p,
+li,
+span {
+  @include font-size($grid4x);
+  @include line-height(18px);
+
+  b {
+      font-weight: 900;
+  }
+}
