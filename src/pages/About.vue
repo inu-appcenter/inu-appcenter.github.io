@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import About from '../md/about.md'
+import About from '@/md/about.md'
 
 export default {
   name: 'about',

@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Kakao from './components/Kakao'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import Kakao from '@/components/Kakao'
 
 export default {
   name: 'app',
