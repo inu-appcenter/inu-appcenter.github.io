@@ -1,9 +1,11 @@
 <template lang="pug">
   div#home
+    Header
     Kakao
 </template>
 
 <script>
+import Header from './Header'
 import Kakao from './Kakao'
 
 export default {
@@ -14,6 +16,7 @@ export default {
     }
   },
   components: {
+    Header,
     Kakao
   }
 }
