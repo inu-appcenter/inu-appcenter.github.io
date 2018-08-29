@@ -2,6 +2,9 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 
+/* ==============================
+  basic modules
+============================== */
 @import
   './modules/spoqa',
   './modules/grid',
@@ -12,7 +15,10 @@
   './modules/class';
 
 
-  @import
+/* ==============================
+  components
+============================== */
+@import
   './components/markdown',
   './components/header',
   './components/footer',
@@ -20,7 +26,10 @@
   './components/tooltip';
 
 
-  @import
+/* ==============================
+  pages specific
+============================== */
+@import
   './pages/alt',
   './pages/home',
   './pages/about',

@@ -5,7 +5,7 @@ const gulp = require('gulp'),
 
 
 /* ==============================
-    image resizer
+  image resizer
 ============================== */
 gulp.task('img-resize', () =>
   gulp.src('./src/assets/src/*')
@@ -15,6 +15,6 @@ gulp.task('img-resize', () =>
 
 
 /* ==============================
-    gulp watch
+  gulp watch
 ============================== */
 gulp.task('watch', ['img-resize'])

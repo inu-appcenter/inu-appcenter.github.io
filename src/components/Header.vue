@@ -3,11 +3,12 @@
     div.container
       div.header__container.page__wrapper
         div.header__logo
-          img.header__logo--img(
-            src="../assets/dist/favicon.svg"
-            v-scroll-to="'body'"
-            v-tooltip.bottom="{content: '맨 위로', delay: {show: 500, hide: 100}}"
+          router-link(
+            :to="'/home'"
           )
+            img.header__logo--img(
+              src="../assets/dist/favicon.svg"
+            )
         div.header__link
           router-link.header__link--each(
             v-for="(value, key) in menuList"

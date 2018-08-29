@@ -3,12 +3,17 @@
     div.container
       div.page__wrapper
         router-view
-        router-link(
-          v-for="(value, key) in projectList"
-          :key="key"
-          :to="value.linkto"
-          v-tooltip.bottom="{content: value.title, delay: {show: 500, hide: 100}}"
-        ) {{ value.title }}
+        div.home__grid(
+           v-if="this.$route.path === '/'"
+        )
+          router-link.home__grid--list(
+            v-for="(value, key) in projectList"
+            :key="key"
+            :to="value.linkto"
+          )
+            img.home__grid--img(
+              :src="value.src"
+            )
 </template>
 
 <script>
@@ -19,8 +24,9 @@ export default {
       projectList: {
         univcam: {
           title: 'UnivCam',
-          linkto: 'univcam'
-        }
+          linkto: 'univcam',
+          src: 'https://spemer.com/img/works/univcam/thumb.png'
+        },
       }
     }
   }
