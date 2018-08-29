@@ -5,6 +5,8 @@ import Home from '../pages/Home'
 import Contact from '../pages/Contact'
 import About from '../pages/About'
 
+import UnivCam from '../pages/projects/UnivCam'
+
 
 Vue.use(VueRouter)
 
@@ -15,7 +17,14 @@ const router = new VueRouter({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      children: [,
+        {
+          path: 'univcam',
+          name: 'univcam',
+          component: UnivCam
+        },
+      ]
     },
     {
       path: '*',

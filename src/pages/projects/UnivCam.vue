@@ -1,21 +1,20 @@
 <template lang="pug">
-  div#about
-    div.alt__container
-      About
+  div#univcam
+    UnivCam
 </template>
 
 <script>
-import About from '../md/about.md'
+import UnivCam from '@/md/projects/univcam.md'
 
 export default {
-  name: 'about',
+  name: 'univcam',
   data () {
     return {
 
     }
   },
   components: {
-    About
+    UnivCam
   }
 }
 </script>

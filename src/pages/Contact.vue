@@ -1,6 +1,6 @@
 <template lang="pug">
   div#contact
-    div.alt--container Contact
+    div.alt__container Contact
 </template>
 
 <script>
