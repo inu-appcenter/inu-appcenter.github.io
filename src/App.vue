@@ -23,7 +23,7 @@ export default {
     Kakao
   },
   updated () {
-    let getAnchorTags = document.querySelectorAll('#markdown li a');
+    let getAnchorTags = document.querySelectorAll('#markdown a');
     [...getAnchorTags].forEach(anchor => {
       let getAnchorTarget = anchor.getAttribute('target')
       if(!getAnchorTarget)

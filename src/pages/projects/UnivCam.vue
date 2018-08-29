@@ -5,12 +5,13 @@
 
 <script>
 import UnivCam from '@/md/projects/univcam.md'
+import {globalVar} from '@/globalVar'
 
 export default {
   name: 'univcam',
   data () {
     return {
-
+      baseURI: globalVar.univCam
     }
   },
   components: {
