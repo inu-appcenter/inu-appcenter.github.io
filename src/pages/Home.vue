@@ -23,6 +23,15 @@ export default {
         }
       }
     }
+  },
+  mounted () {
+    let getAnchorTags = document.querySelectorAll('li a');
+    [...getAnchorTags].forEach(anchor => {
+      let getAnchorTarget = anchor.getAttribute('target')
+      if(!getAnchorTarget) {
+        anchor.setAttribute('target', '_blank')
+      }
+    })
   }
 }
 </script>
