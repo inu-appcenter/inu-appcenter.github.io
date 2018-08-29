@@ -32,7 +32,7 @@
 * [최은영](https://github.com/emily7485)
 * [이준상](https://github.com/zunzunzun)
 * [조용문](https://github.com/choymoon)
-* [조준영](https://github.com/chojunyng)
+* [조준영](https://github.com/youngblu)
 * [김재희](https://github.com/jaehui327)
 * [황동균](https://github.com/dongdong97)
 * 김민지
