@@ -1,0 +1,29 @@
+#footer {
+  width: 100%;
+
+  .footer--container {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+
+    .footer__gh {
+
+      .footer__gh--link {
+        color: $text999;
+        transition: color .25s ease;
+        @include font-size($grid6x);
+
+        &:hover {
+          color: $text333;
+        }
+      }
+    }
+
+    .footer__copyright {
+
+      .footer__copyright--text {
+        @include font-size($grid3x);
+      }
+    }
+  }
+}

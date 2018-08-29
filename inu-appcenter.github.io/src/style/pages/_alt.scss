@@ -2,4 +2,9 @@
 #about,
 #contact {
   padding-top: $grid14x;
+
+  .alt--container {
+    width: 960px;
+    margin: 0 auto;
+  }
 }

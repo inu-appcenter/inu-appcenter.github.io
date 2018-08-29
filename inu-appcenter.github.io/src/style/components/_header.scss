@@ -7,4 +7,28 @@
   align-items: center;
   background-color: #fff;
   @include box-shadow($grid2x, $grid3x);
+
+  .header__container {
+    width: 960px;
+    margin: 0 auto;
+
+    .header__logo {
+      float: left;
+
+      .header__logo--img {
+        width: $grid10x;
+        height: $grid10x;
+        padding: $grid2x 0;
+      }
+    }
+
+    .header__link {
+      float: right;
+
+      .header__link--each {
+        padding: $grid4x;
+        display: inline-block;
+      }
+    }
+  }
 }

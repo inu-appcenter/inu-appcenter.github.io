@@ -1,5 +1,6 @@
 <template lang="pug">
-  div#home Home
+  div#home
+    div.alt--container Home
 </template>
 
 <script>

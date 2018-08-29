@@ -1,5 +1,6 @@
 <template lang="pug">
-  div#about About
+  div#about
+    div.alt--container About
 </template>
 
 <script>
