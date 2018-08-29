@@ -1,13 +1,14 @@
 <template lang="pug">
   div#home
-    div.alt__container
-      router-view
-      router-link(
-        v-for="(value, key) in projectList"
-        :key="key"
-        :to="value.linkto"
-      ) {{ value.title }}
-        //- v-tooltip.bottom="{content: 'value.title', delay: {show: 500, hide: 100}}"
+    div.container
+      div.page__wrapper
+        router-view
+        router-link(
+          v-for="(value, key) in projectList"
+          :key="key"
+          :to="value.linkto"
+          v-tooltip.bottom="{content: value.title, delay: {show: 500, hide: 100}}"
+        ) {{ value.title }}
 </template>
 
 <script>

@@ -58,8 +58,12 @@ body {
     fonts
 ============================== */
 a {
-  color: $brand-yellow;
+  color: $brand;
   text-decoration: none;
+
+  &:hover {
+    color: $brand-hover;
+  }
 }
 
 h1 {

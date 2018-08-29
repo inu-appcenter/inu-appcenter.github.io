@@ -16,6 +16,7 @@
       float: left;
 
       .header__logo--img {
+        cursor: pointer;
         width: $grid10x;
         height: $grid10x;
         padding: $grid2x 0;
@@ -26,8 +27,20 @@
       float: right;
 
       .header__link--each {
-        padding: $grid4x;
         display: inline-block;
+        padding-left: $grid4x;
+
+        &:not(:last-child) {
+          padding: $grid4x;
+        }
+
+        @media #{$pablet} {
+          padding-left: $grid2x;
+
+          &:not(:last-child) {
+            padding: $grid4x $grid2x;
+          }
+        }
       }
     }
   }

@@ -11,12 +11,18 @@
       padding: 0 $grid16x;
     }
 
+    @media #{$basic} {
+      width: calc(100% - #{$grid24x});
+      padding: 0 $grid12x;
+    }
+
     @media #{$tablet} {
       width: calc(100% - #{$grid16x});
       padding: 0 $grid8x;
 
       .page__wrapper {
         width: 480px;
+        margin: 0 auto;
       }
     }
 
@@ -25,20 +31,22 @@
 
       .page__wrapper {
         width: 360px;
+        margin: 0 auto;
       }
     }
 
     @media #{$pablet} {
-      width: calc(100% - #{$grid8x});
-      padding: 0 $grid4x;
+      width: calc(100% - #{$grid6x});
+      padding: 0 $grid3x;
 
       .page__wrapper {
-        width: calc(100% - 32px);
+        width: calc(100% - #{$grid6x});
+        margin: 0 auto;
       }
     }
 
     @media #{$mobile} {
-      padding: 0 $grid4x;
+      padding: 0 $grid3x;
     }
   }
 }

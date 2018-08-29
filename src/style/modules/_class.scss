@@ -46,11 +46,11 @@
     height: $grid14x;
     font-weight: 900;
     margin-top: $grid8x;
-    color: $brand-yellow;
+    color: $brand;
     background-color: #fff;
     -webkit-transition: all .25s ease;
     transition: all .25s ease;
-    border: 2px solid $brand-yellow;
+    border: 2px solid $brand;
     @include border-radius($grid16x);
     @include box-shadow($grid2x, $grid4x);
 
@@ -61,7 +61,7 @@
     &:hover {
       color: #fff;
       font-weight: 900;
-      background-color: $brand-yellow;
+      background-color: $brand;
     }
   }
 }
