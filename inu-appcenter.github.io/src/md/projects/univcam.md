@@ -1,10 +1,3 @@
----
-layout: post
-title: UnivCam - Case Study & Design Process
-# featured-img: [UnivCam]
-mathjax: true
----
-
 # UnivCam - Case Study & Design Process
 
 UnivCam is an application for college students who want to sort and classify their albums and images in clean and intuitive way. I want to share my experience of this project’s case study and design process from start to publish on iOS App Store and Google Play Store.
