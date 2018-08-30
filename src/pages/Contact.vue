@@ -2,6 +2,7 @@
   div#contact
     div.contact__title
       h1.contact__title--text {{nameKo}}
+
     div.contact__info
       p.contact__info--text(
         v-for="(value, key) in contactInfo"
@@ -30,6 +31,7 @@ import GoogleMaps from '@/components/GoogleMaps'
 
 export default {
   name: 'contact',
+
   data () {
     return {
       nameKo: globalVar.nameKo,

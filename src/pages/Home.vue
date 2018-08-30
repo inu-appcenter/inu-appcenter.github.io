@@ -3,6 +3,7 @@
     div.container
       div.page__wrapper
         router-view
+
         div.home__grid(
            v-if="this.$route.path === '/'"
         )
@@ -14,6 +15,7 @@
             img.home__grid--img(
               :src="value.src"
             )
+
         TopBtn(
           v-if="this.$route.path !== '/'"
         )

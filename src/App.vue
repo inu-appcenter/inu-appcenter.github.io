@@ -27,6 +27,7 @@ export default {
 
   updated () {
     let getAnchorTags = document.querySelectorAll('#markdown a');
+
     [...getAnchorTags].forEach(anchor => {
       let getAnchorTarget = anchor.getAttribute('target')
       if(!getAnchorTarget)

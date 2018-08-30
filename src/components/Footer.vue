@@ -27,6 +27,7 @@ export default {
   data () {
     return {
       year: '',
+
       snsList: {
         facebook: {
           href: globalVar.fbURL,

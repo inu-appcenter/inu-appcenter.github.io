@@ -67,6 +67,7 @@ export default {
       float: right;
 
       .header__link--each {
+        font-weight: 900;
         display: inline-block;
         padding: $grid4x 0 $grid4x $grid4x;
 

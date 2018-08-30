@@ -31,6 +31,7 @@ export default {
     cursor: pointer;
     width: $grid32x;
     height: $grid12x;
+    font-weight: 900;
     margin-top: $grid16x;
     border: $brand 1px solid;
     background-color: #fff;

@@ -8,12 +8,9 @@ import Toasted from 'vue-toasted'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import {globalVar} from '@/globalVar'
 
-
 import '@/style/style.scss'
 
-
 // https://www.npmjs.com/package/vue-markdown-loader
-
 
 Vue.use(VTooltip)
 Vue.use(VueScrollTo)
@@ -25,6 +22,7 @@ Vue.use(VueGoogleMaps, {
     libraries: 'places',
   },
 })
+
 Kakao.init(process.env.KAKAO_KEY)
 
 new Vue({
