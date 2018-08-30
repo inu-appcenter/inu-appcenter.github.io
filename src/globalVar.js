@@ -2,6 +2,15 @@ import Vue from 'vue'
 
 export const globalVar = new Vue ({
   data: {
+    nameKo: '인천대학교 앱센터',
+    nameEn: 'INU Appcenter',
+
+    fbURL: 'https://www.facebook.com/INUAppCenter',
+    igURL: 'https://instagram.com/inuappcen',
+    ghURL: 'https://github.com/inu-appcenter',
+    mailTo: 'inuappcenter@gmail.com',
+    kakaoURL: 'https://pf.kakao.com/' + process.env.KAKAO_URL,
+
     univCam: 'https://rawgit.com/inu-appcenter/UnivCam-ios/master/README.md'
   }
 })

@@ -5,7 +5,7 @@
         div.footer__sns
           a.footer__sns--link.fa(
             v-for="(value, key) in snsList"
-            :href="'https://' + value.href"
+            :href="value.href"
             target="_blank"
             aria-hidden="true"
             :class="'fa-' + value.iconClass"
@@ -19,6 +19,8 @@
 </template>
 
 <script>
+import {globalVar} from '@/globalVar'
+
 export default {
   name: 'footer-el',
   data () {
@@ -26,19 +28,19 @@ export default {
       year: '',
       snsList: {
         facebook: {
-          href: 'facebook.com/INUAppCenter',
+          href: globalVar.fbURL,
           iconID : 'fbIcon',
           iconClass : 'facebook-square',
           title: '페이스북'
         },
         instagram: {
-          href: 'instagram.com/inuappcen',
+          href: globalVar.igURL,
           iconID : 'igIcon',
           iconClass : 'instagram',
           title: '인스타그램'
         },
         github: {
-          href: 'github.com/inu-appcenter',
+          href: globalVar.ghURL,
           iconID : 'ghIcon',
           iconClass : 'github',
           title: '깃허브'

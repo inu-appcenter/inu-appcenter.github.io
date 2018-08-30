@@ -68,7 +68,6 @@ a {
 
 h1 {
   font-weight: 900;
-  text-align: center;
   @include font-size($grid8x);
   @include line-height($grid8x);
 }

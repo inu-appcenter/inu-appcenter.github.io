@@ -1,7 +1,8 @@
 #home,
 #about,
 #contact {
-  padding-top: $grid14x + $grid8x;
+  margin: $grid16x auto !important;
+  padding-top: $grid12x !important;
 
   // .alt__container {
   //   width: 960px;

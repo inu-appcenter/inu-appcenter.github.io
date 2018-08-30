@@ -1,7 +1,38 @@
 #markdown {
-  margin: $grid16x 0;
+  width: 640px;
+  margin: 0 auto;
+
+  @media #{$default} {
+    width: calc(100% - #{$grid32x});
+    padding: 0 $grid16x;
+  }
+
+  @media #{$basic} {
+    width: calc(100% - #{$grid16x});
+    padding: 0 $grid8x;
+  }
+
+  @media #{$tablet} {
+    width: 100%;
+    padding: 0;
+  }
 
   img {
+    margin: 0 auto;
+    display: block;
     max-width: 100%;
+    margin-top: $grid8x;
+    margin-bottom: $grid4x;
+  }
+
+  em {
+    margin: 0 auto;
+    display: block;
+    max-width: 80%;
+    text-align: center;
+
+    @media #{$tablet} {
+      max-width: 100%;
+    }
   }
 }
