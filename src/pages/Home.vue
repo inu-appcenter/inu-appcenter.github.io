@@ -14,9 +14,14 @@
             img.home__grid--img(
               :src="value.src"
             )
+        TopBtn(
+          v-if="this.$route.path !== '/'"
+        )
 </template>
 
 <script>
+import TopBtn from '@/components/TopBtn'
+
 export default {
   name: 'home',
 
@@ -30,6 +35,10 @@ export default {
         },
       }
     }
+  },
+
+  components: {
+    TopBtn
   }
 }
 </script>

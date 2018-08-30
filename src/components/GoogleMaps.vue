@@ -1,8 +1,9 @@
 <template lang="pug">
   div#google-map
     GmapMap.GmapMap(
-      :center="{lat:37.376547, lng:126.635774}"
       :zoom="15"
+      :center="{lat:37.376547, lng:126.635774}"
+      v-tooltip.bottom="{content: adr, delay: {show: 500, hide: 100}}"
     )
       GmapMarker(
         :clickable="false"
@@ -20,6 +21,7 @@ export default {
   data() {
     return {
       center: { lat: globalVar.lat, lng: globalVar.lng },
+      adr: '인천대학교 송도캠퍼스 4호관 107호'
     }
   },
 }
@@ -35,11 +37,6 @@ export default {
     height: 50vh;
     max-height: 400px;
     margin-top: $grid8x;
-
-    .map__text {
-      position: absolute;
-      top: 0;
-    }
 
     .gmnoprint,
     button {
