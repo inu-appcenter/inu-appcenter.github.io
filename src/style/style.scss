@@ -20,9 +20,6 @@
 ============================== */
 @import
   './components/markdown',
-  './components/header',
-  './components/footer',
-  './components/kakao',
   './components/tooltip';
 
 
@@ -30,7 +27,4 @@
   pages specific
 ============================== */
 @import
-  './pages/alt',
-  './pages/home',
-  './pages/about',
-  './pages/contact';
+  './pages/alt';
