@@ -10,6 +10,7 @@
 <script>
 export default {
   name: 'kakao-btn',
+
   methods: {
     plusFriendChat() {
       Kakao.PlusFriend.chat({

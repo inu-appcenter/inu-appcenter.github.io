@@ -11,6 +11,9 @@ export const globalVar = new Vue ({
     mailTo: 'inuappcenter@gmail.com',
     kakaoURL: 'https://pf.kakao.com/' + process.env.KAKAO_URL,
 
+    lat: '37.376547',
+    lng: '126.635774',
+
     univCam: 'https://rawgit.com/inu-appcenter/UnivCam-ios/master/README.md'
   }
 })

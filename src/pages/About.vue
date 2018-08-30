@@ -27,6 +27,7 @@ import {globalVar} from '@/globalVar'
 
 export default {
   name: 'about',
+
   data () {
     return {
       nameKo: globalVar.nameKo,

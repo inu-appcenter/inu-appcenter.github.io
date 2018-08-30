@@ -13,15 +13,18 @@ import Kakao from '@/components/Kakao'
 
 export default {
   name: 'app',
+
   data () {
     return {
     }
   },
+
   components: {
     Header,
     Footer,
     Kakao
   },
+
   updated () {
     let getAnchorTags = document.querySelectorAll('#markdown a');
     [...getAnchorTags].forEach(anchor => {

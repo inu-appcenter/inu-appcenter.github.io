@@ -9,11 +9,13 @@ import {globalVar} from '@/globalVar'
 
 export default {
   name: 'univcam',
+
   data () {
     return {
       baseURI: globalVar.univCam
     }
   },
+
   components: {
     UnivCam
   }

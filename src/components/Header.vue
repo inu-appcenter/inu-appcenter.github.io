@@ -22,6 +22,7 @@
 <script>
 export default {
   name: 'header-el',
+
   data () {
     return {
       menuList: {

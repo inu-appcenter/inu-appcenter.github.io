@@ -19,15 +19,20 @@
           v-tooltip.bottom="{content: '복사하려면 클릭하세요', delay: {show: 500, hide: 100}}"
         ) {{ mail.text }}
           i.fa.fa-clipboard
+
+    GoogleMaps
 </template>
 
 <script>
 import {globalVar} from '@/globalVar'
+import GoogleMaps from '@/components/GoogleMaps'
 
 export default {
   name: 'contact',
   data () {
     return {
+      lat: globalVar.lat,
+      lng: globalVar.lng,
       nameKo: globalVar.nameKo,
       contactInfo: {
         kakao: {
@@ -47,6 +52,7 @@ export default {
       },
     }
   },
+
   methods: {
     toast () {
       this.$toasted.show('이메일 주소가 복사되었습니다', {
@@ -55,6 +61,10 @@ export default {
         duration : 2000
       })
     }
+  },
+
+  components: {
+    GoogleMaps
   }
 }
 </script>

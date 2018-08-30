@@ -23,6 +23,7 @@ import {globalVar} from '@/globalVar'
 
 export default {
   name: 'footer-el',
+
   data () {
     return {
       year: '',
@@ -48,6 +49,7 @@ export default {
       }
     }
   },
+
   computed: {
     thisYear() {
       return this.year = new Date().getFullYear()
