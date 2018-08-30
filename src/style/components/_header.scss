@@ -28,7 +28,7 @@
 
       .header__link--each {
         display: inline-block;
-        padding-left: $grid4x;
+        padding: $grid4x 0 $grid4x $grid4x;
 
         &:not(:last-child) {
           padding: $grid4x;

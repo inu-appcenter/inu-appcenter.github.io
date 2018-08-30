@@ -1,3 +1,27 @@
 #contact {
   width: 640px;
+
+  .contact__title {
+
+    .contact__title--text {
+
+    }
+  }
+
+  .contact__info {
+
+    .contact__info--text {
+      display: inline;
+      @include line-height($grid5x);
+
+      &::after {
+        white-space: pre;
+        content: '\a';
+      }
+
+      .contact__info--link {
+        cursor: pointer;
+      }
+    }
+  }
 }

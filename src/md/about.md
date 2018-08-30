@@ -1,5 +1,7 @@
 # 인천대학교 앱센터
 
+INU Appcenter is an academic club focused on mobile and web application developments, based in Incheon National University.
+
 ## 연락처
 
 * 카카오톡 플러스친구: [@인천대앱센터](https://pf.kakao.com/_xgxaSLd)
