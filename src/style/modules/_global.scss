@@ -44,7 +44,7 @@
 /* ==============================
   normalize css
 ============================== */
-body {
+html {
   outline: none;
   color: $text333;
   @include font-settings();

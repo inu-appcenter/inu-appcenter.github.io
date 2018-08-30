@@ -1,12 +1,12 @@
 #contact {
   width: 640px;
 
-  .contact__title {
+  // .contact__title {
 
-    .contact__title--text {
+  //   .contact__title--text {
 
-    }
-  }
+  //   }
+  // }
 
   .contact__info {
 
@@ -14,13 +14,25 @@
       display: inline;
       @include line-height($grid5x);
 
-      &::after {
-        white-space: pre;
-        content: '\a';
+      &:not(:last-child) {
+
+        ::after {
+          white-space: pre;
+          content: '\a';
+        }
       }
 
       .contact__info--link {
         cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        .fa-clipboard {
+          color: $text999;
+          padding-left: $grid;
+        }
       }
     }
   }

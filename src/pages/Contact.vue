@@ -11,13 +11,14 @@
           target="_blank"
           :href="value.href"
         ) {{ value.text }}
+
       p.contact__info--text {{ mail.name }}:&nbsp;
         span.contact__info--link(
           @click="toast"
           v-clipboard:copy="mail.text"
           v-tooltip.bottom="{content: '복사하려면 클릭하세요', delay: {show: 500, hide: 100}}"
-        ) {{ mail.text }}&nbsp;
-
+        ) {{ mail.text }}
+          i.fa.fa-clipboard
 </template>
 
 <script>
