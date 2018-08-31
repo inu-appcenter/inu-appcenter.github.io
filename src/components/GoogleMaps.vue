@@ -36,7 +36,12 @@ export default {
     width: 100%;
     height: 50vh;
     max-height: 400px;
-    margin-top: $grid8x;
+    margin-top: $grid12x;
+
+    .vue-map {
+      border: 1px solid $texteee;
+      @include border-radius($grid2x);
+    }
 
     .gmnoprint,
     button {

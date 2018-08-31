@@ -88,3 +88,7 @@ span {
       font-weight: 900;
   }
 }
+
+::selection {
+  background-color: transparent !important;
+}

@@ -64,7 +64,7 @@ export default {
 
 #footer {
   width: 100%;
-  padding: $grid8x 0;
+  padding: $grid8x 0 $grid12x;
   margin-top: $grid8x;
   border-top: $texteee 1px solid;
 
@@ -77,8 +77,9 @@ export default {
 
       .footer__sns--link {
         color: $text999;
-        padding: $grid4x;
+        margin-top: $grid4x;
         transition: color .25s ease;
+        padding: $grid2x $grid4x $grid4x $grid4x;
         @include font-size($grid6x);
 
         &:hover {
