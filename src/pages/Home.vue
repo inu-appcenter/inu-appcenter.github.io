@@ -22,10 +22,16 @@
 </template>
 
 <script>
+import {globalVar} from '@/globalVar'
 import TopBtn from '@/components/TopBtn'
 
 export default {
   name: 'home',
+
+  metaInfo: {
+    title: globalVar.nameKo,
+    titleTemplate: '%s',
+  },
 
   data () {
     return {
@@ -41,7 +47,7 @@ export default {
 
   components: {
     TopBtn
-  }
+  },
 }
 </script>
 

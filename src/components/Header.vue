@@ -31,7 +31,7 @@ export default {
         Contact: '/contact'
       }
     }
-  }
+  },
 }
 </script>
 

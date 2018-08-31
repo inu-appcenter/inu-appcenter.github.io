@@ -13,7 +13,7 @@ export default {
     return {
       tooltip: '맨 위로'
     }
-  }
+  },
 }
 </script>
 

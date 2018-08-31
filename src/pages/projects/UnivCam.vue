@@ -12,13 +12,13 @@ export default {
 
   data () {
     return {
-      baseURI: globalVar.univCam
+      baseURI: globalVar.univCam,
     }
   },
 
   components: {
     UnivCam
-  }
+  },
 }
 </script>
 

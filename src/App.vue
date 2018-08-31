@@ -33,7 +33,7 @@ export default {
       if(!getAnchorTarget)
         anchor.setAttribute('target', '_blank')
     })
-  }
+  },
 }
 </script>
 

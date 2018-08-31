@@ -32,6 +32,11 @@ import GoogleMaps from '@/components/GoogleMaps'
 export default {
   name: 'contact',
 
+  metaInfo: {
+    title: globalVar.nameKo,
+    titleTemplate: '%s - Contact',
+  },
+
   data () {
     return {
       nameKo: globalVar.nameKo,
@@ -66,7 +71,7 @@ export default {
 
   components: {
     GoogleMaps
-  }
+  },
 }
 </script>
 

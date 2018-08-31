@@ -12,7 +12,7 @@
 
 ## 멤버
 
-#### Android
+### Android
 
 - [이채은](https://github.com/chaeeun)
 - [황견주](https://github.com/Kyun-J)
@@ -30,7 +30,7 @@
 - [정고운](https://github.com/GowoonJ)
 - [윤동관](https://github.com/YoonDongGwan)
 
-#### iOS
+### iOS
 
 - [김선일](https://github.com/Seonift)
 - [최은영](https://github.com/emily7485)
@@ -45,7 +45,7 @@
 - 전예린
 - 유용상
 
-#### Server
+### Server
 
 - 권순재
 - [최찬호](https://github.com/ftilrftilr12)
@@ -57,7 +57,7 @@
 - [노창환](https://github.com/nohchanghwan)
 - [임헌준](https://github.com/Limheonjun)
 
-#### Design
+### Design
 
 - [서 혁](https://github.com/spemer)
 - [김진웅](https://github.com/Woongdesign)

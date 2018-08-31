@@ -20,13 +20,21 @@
             :href="'https://github.com/' + value.href"
             target="_blank"
           ) :&nbsp;https://github.com/{{ value.href }}
+
+    TopBtn
 </template>
 
 <script>
 import {globalVar} from '@/globalVar'
+import TopBtn from '@/components/TopBtn'
 
 export default {
   name: 'about',
+
+  metaInfo: {
+    title: globalVar.nameKo,
+    titleTemplate: '%s - About',
+  },
 
   data () {
     return {
@@ -167,6 +175,10 @@ export default {
         ]
       }
     }
+  },
+
+  components: {
+    TopBtn
   },
 }
 </script>

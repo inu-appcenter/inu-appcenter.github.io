@@ -17,7 +17,7 @@ export default {
         plusFriendId: process.env.KAKAO_URL
       })
     }
-  }
+  },
 }
 </script>
 

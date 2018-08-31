@@ -55,7 +55,7 @@ export default {
     thisYear() {
       return this.year = new Date().getFullYear()
     }
-  }
+  },
 }
 </script>
 
