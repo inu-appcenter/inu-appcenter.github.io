@@ -5,6 +5,7 @@ import VTooltip from 'v-tooltip'
 import VueScrollTo from 'vue-scrollto'
 import VueClipboard from 'vue-clipboard2'
 import Toasted from 'vue-toasted'
+import VueProgressBar from 'vue-progressbar'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import {globalVar} from '@/globalVar'
 
@@ -21,6 +22,11 @@ Vue.use(VueGoogleMaps, {
     key: process.env.GOOGLE_API,
     libraries: 'places',
   },
+})
+Vue.use(VueProgressBar, {
+  color: '#034A9A',
+  failedColor: 'red',
+  height: '2px'
 })
 
 Kakao.init(process.env.KAKAO_KEY)
