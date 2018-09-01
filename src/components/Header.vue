@@ -5,6 +5,7 @@
         div.header__logo
           router-link(
             :to="'/home'"
+            v-scroll-to="{el: 'body', duration: 0}"
           )
             img.header__logo--img(
               src="../assets/dist/favicon.svg"

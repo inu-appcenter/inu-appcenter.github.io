@@ -164,8 +164,6 @@ export default {
           },
           { name: '양효정',
           },
-          { name: '왕윤석',
-          },
           { name: '진정민',
           },
           { name: '이예린',

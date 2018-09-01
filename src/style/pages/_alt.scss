@@ -9,3 +9,7 @@
   //   margin: 0 auto;
   // }
 }
+
+.home__grid {
+  margin: -#{$grid12x} auto $grid16x !important;
+}

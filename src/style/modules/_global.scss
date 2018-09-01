@@ -93,3 +93,10 @@ span {
 ::selection {
   background-color: transparent !important;
 }
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}

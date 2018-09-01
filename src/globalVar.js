@@ -4,6 +4,7 @@ export const globalVar = new Vue ({
   data: {
     nameKo: '인천대학교 앱센터',
     nameEn: 'INU Appcenter',
+    nameEnFull: 'Incheon National University Appcenter',
 
     fbURL: 'https://www.facebook.com/INUAppCenter',
     igURL: 'https://instagram.com/inuappcen',

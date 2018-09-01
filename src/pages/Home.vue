@@ -68,16 +68,16 @@ export default {
       .home__grid--img {
         max-width: 100%;
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
         transition: all .5s ease;
         border: 1px solid $texteee;
+        background-repeat: no-repeat;
+        background-position: center center;
         @include grid-layout();
         @include border-radius($grid2x);
 
         &:hover {
-          border: 1px solid transparent;
           transition: all .25s ease;
+          border: 1px solid transparent;
           @include box-shadow($grid, $grid2x, $black16);
         }
       }

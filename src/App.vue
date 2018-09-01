@@ -1,7 +1,8 @@
 <template lang="pug">
   div#app
     Header
-    router-view
+    Hero(v-if="this.$route.path === '/'")
+    router-view(v-scroll-to="{el: 'body', duration: 0}")
     Footer
     Kakao
     vue-progress-bar
@@ -9,6 +10,7 @@
 
 <script>
 import Header from '@/components/Header'
+import Hero from '@/components/Hero'
 import Footer from '@/components/Footer'
 import Kakao from '@/components/Kakao'
 
@@ -22,6 +24,7 @@ export default {
 
   components: {
     Header,
+    Hero,
     Footer,
     Kakao
   },
