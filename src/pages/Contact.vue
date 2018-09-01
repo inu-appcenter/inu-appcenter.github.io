@@ -69,6 +69,40 @@ export default {
     }
   },
 
+  // computed () {
+  //   document.getElementById('submit').addEventListener('click', event => {
+  //   const leadName = document.getElementById('client_name').value;
+  //   const leadEmail = document.getElementById('client_email').value;
+  //   const leadMobile = document.getElementById('client_mobile').value;
+  //   const leadMessage = document.getElementById('client_message').value;
+
+  //   if(leadMobile != "" && leadEmail != "" && leadName != "") {
+
+  //     const leadTimestamp = Math.floor(Date.now() / 1000);
+
+  //     firebase.database().ref('leads').once('value', snapshot => {
+  //       var totalLeads = snapshot.numChildren();
+  //       totalLeads++;
+
+  //       firebase.database().ref('leads').child(totalLeads).set({
+  //         name: leadName,
+  //         mobile: leadMobile,
+  //         email: leadEmail,
+  //         message: leadMessage,
+  //         timestamp: leadTimestamp
+  //       });
+  //       $('.contact-form').hide();
+  //       $('.message-sent-success').show();
+
+  //     }, function(error) {
+  //       console.log(error);
+  //     });
+  //     } else {
+  //       alert('Please fill all the fields.');
+  //     }
+  //   });
+  // },
+
   components: {
     GoogleMaps
   },

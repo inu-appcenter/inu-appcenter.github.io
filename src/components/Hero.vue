@@ -8,6 +8,7 @@
 
       button.hero__scrolldown(
         v-scroll-to="{el: '.home__grid', duration: 0, offset: -120}"
+        v-tooltip.bottom="{content: '프로젝트 보기', delay: {show: 500, hide: 100}}"
       )
         i.fa.fa-angle-down
 </template>

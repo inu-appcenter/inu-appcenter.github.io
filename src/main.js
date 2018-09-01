@@ -7,6 +7,7 @@ import VueClipboard from 'vue-clipboard2'
 import Toasted from 'vue-toasted'
 import VueProgressBar from 'vue-progressbar'
 import * as VueGoogleMaps from 'vue2-google-maps'
+import firebase from 'firebase'
 import {globalVar} from '@/globalVar'
 
 import '@/style/style.scss'
@@ -17,12 +18,14 @@ Vue.use(VTooltip)
 Vue.use(VueScrollTo)
 Vue.use(VueClipboard)
 Vue.use(Toasted)
+
 Vue.use(VueGoogleMaps, {
   load: {
     key: process.env.GOOGLE_API,
     libraries: 'places',
   },
 })
+
 Vue.use(VueProgressBar, {
   color: '#034A9A',
   failedColor: 'red',
@@ -30,6 +33,16 @@ Vue.use(VueProgressBar, {
 })
 
 Kakao.init(process.env.KAKAO_KEY)
+
+let config = {
+  apiKey: process.env.FIREBASE_API,
+  authDomain: process.env.FIREBASE_ID + ".firebaseapp.com",
+  databaseURL: "https://" + process.env.FIREBASE_ID + ".firebaseio.com",
+  projectId: process.env.FIREBASE_ID,
+  storageBucket: process.env.FIREBASE_ID + ".appspot.com",
+  messagingSenderId: process.env.FIREBASE_MESSAGING
+};
+firebase.initializeApp(config);
 
 new Vue({
   el: '#app',
