@@ -6,6 +6,7 @@ import VueScrollTo from 'vue-scrollto'
 import VueClipboard from 'vue-clipboard2'
 import Toasted from 'vue-toasted'
 import VueProgressBar from 'vue-progressbar'
+import VueScrollReveal from 'vue-scroll-reveal'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import firebase from 'firebase'
 import {globalVar} from '@/globalVar'
@@ -14,10 +15,11 @@ import '@/style/style.scss'
 
 // https://www.npmjs.com/package/vue-markdown-loader
 
+Vue.use(Toasted)
 Vue.use(VTooltip)
 Vue.use(VueScrollTo)
 Vue.use(VueClipboard)
-Vue.use(Toasted)
+Vue.use(VueScrollReveal)
 
 Vue.use(VueGoogleMaps, {
   load: {
