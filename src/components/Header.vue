@@ -50,7 +50,6 @@ export default {
   @include box-shadow($grid2x, $grid3x);
 
   .header__container {
-    width: 960px;
     margin: 0 auto;
 
     .header__logo {

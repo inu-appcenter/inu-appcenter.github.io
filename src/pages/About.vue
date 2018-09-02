@@ -1,27 +1,28 @@
 <template lang="pug">
-  div#about
-    div.about__title
-      h1.about__title--title {{nameKo}}
-      p.about__title--text
-        | INU Appcenter is an academic club focused on mobile and web application developments, based in Incheon National University.
+  div#about.container
+    div#markdown.page__wrapper
+      div.about__title
+        h1.about__title--title {{nameKo}}
+        p.about__title--text
+          | INU Appcenter is an academic club focused on mobile and web application developments, based in Incheon National University.
 
-    div.about__members--list(
-      v-for="(value, key, index) in memberList"
-      :key="key"
-    )
-      h1.about__members--title {{ key }}
-      div.about__members(
-        v-for="(value, key) in value"
+      div.about__members--list(
+        v-for="(value, key, index) in memberList"
         :key="key"
       )
-        p.about__members--text {{ value.name }}
-          a.about__members--link(
-            v-if="value.href"
-            :href="'https://github.com/' + value.href"
-            target="_blank"
-          ) :&nbsp;https://github.com/{{ value.href }}
+        h1.about__members--title {{ key }}
+        div.about__members(
+          v-for="(value, key) in value"
+          :key="key"
+        )
+          p.about__members--text {{ value.name }}
+            a.about__members--link(
+              v-if="value.href"
+              :href="'https://github.com/' + value.href"
+              target="_blank"
+            ) :&nbsp;https://github.com/{{ value.href }}
 
-    TopBtn
+      TopBtn
 </template>
 
 <script>
@@ -185,7 +186,6 @@ export default {
 @import '../style/style.scss';
 
 #about {
-  width: 640px;
 
   .about__title {
 

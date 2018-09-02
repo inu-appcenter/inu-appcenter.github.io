@@ -64,12 +64,11 @@ export default {
 
 #footer {
   width: 100%;
-  padding: $grid8x 0 $grid12x;
   margin-top: $grid8x;
+  padding: $grid8x 0 $grid12x;
   border-top: $texteee 1px solid;
 
   .footer__container {
-    width: 960px;
     margin: 0 auto;
     text-align: center;
 

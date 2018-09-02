@@ -6,10 +6,10 @@
     width: 960px;
     margin: 0 auto;
 
-    @media #{$default} {
-      width: calc(100% - #{$grid32x});
-      padding: 0 $grid16x;
-    }
+    // @media #{$default} {
+    //   width: calc(100% - #{$grid32x});
+    //   padding: 0 $grid16x;
+    // }
 
     @media #{$basic} {
       width: calc(100% - #{$grid24x});

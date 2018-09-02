@@ -1,33 +1,37 @@
 <template lang="pug">
-  div#contact
-    div.contact__title
-      h1.contact__title--text {{nameKo}}
+  div#contact.container
+    div#markdown.page__wrapper
+      div.contact__title
+        h1.contact__title--text {{nameKo}}
 
-    div.contact__info
-      p.contact__info--text(
-        v-for="(value, key) in contactInfo"
-        :key="key"
-      ) {{ value.name }}:&nbsp;
-        a.contact__info--link(
-          target="_blank"
-          :href="value.href"
-          v-tooltip.right="{content: value.name + '(새 탭)', delay: {show: 500, hide: 100}}"
-        ) {{ value.text }}
+      div.contact__info
+        p.contact__info--text(
+          v-for="(value, key) in contactInfo"
+          :key="key"
+        ) {{ value.name }}:&nbsp;
+          a.contact__info--link(
+            target="_blank"
+            :href="value.href"
+            v-tooltip.right="{content: value.name + '(새 탭)', delay: {show: 500, hide: 100}}"
+          ) {{ value.text }}
 
-      p.contact__info--text {{ mail.name }}:&nbsp;
-        span.contact__info--link(
-          @click="toast"
-          v-clipboard:copy="mail.text"
-          v-tooltip.bottom="{content: '복사하려면 클릭하세요', delay: {show: 500, hide: 100}}"
-        ) {{ mail.text }}
-          i.fa.fa-clipboard
+        p.contact__info--text {{ mail.name }}:&nbsp;
+          span.contact__info--link(
+            @click="toast"
+            v-clipboard:copy="mail.text"
+            v-tooltip.bottom="{content: '복사하려면 클릭하세요', delay: {show: 500, hide: 100}}"
+          ) {{ mail.text }}
+            i.fa.fa-clipboard
 
-    GoogleMaps
+      GoogleMaps
+
+      //- MailForm
 </template>
 
 <script>
 import {globalVar} from '@/globalVar'
 import GoogleMaps from '@/components/GoogleMaps'
+import MailForm from '@/components/MailForm'
 
 export default {
   name: 'contact',
@@ -69,42 +73,9 @@ export default {
     }
   },
 
-  // computed () {
-  //   document.getElementById('submit').addEventListener('click', event => {
-  //   const leadName = document.getElementById('client_name').value;
-  //   const leadEmail = document.getElementById('client_email').value;
-  //   const leadMobile = document.getElementById('client_mobile').value;
-  //   const leadMessage = document.getElementById('client_message').value;
-
-  //   if(leadMobile != "" && leadEmail != "" && leadName != "") {
-
-  //     const leadTimestamp = Math.floor(Date.now() / 1000);
-
-  //     firebase.database().ref('leads').once('value', snapshot => {
-  //       var totalLeads = snapshot.numChildren();
-  //       totalLeads++;
-
-  //       firebase.database().ref('leads').child(totalLeads).set({
-  //         name: leadName,
-  //         mobile: leadMobile,
-  //         email: leadEmail,
-  //         message: leadMessage,
-  //         timestamp: leadTimestamp
-  //       });
-  //       $('.contact-form').hide();
-  //       $('.message-sent-success').show();
-
-  //     }, function(error) {
-  //       console.log(error);
-  //     });
-  //     } else {
-  //       alert('Please fill all the fields.');
-  //     }
-  //   });
-  // },
-
   components: {
-    GoogleMaps
+    GoogleMaps,
+    MailForm
   },
 }
 </script>
@@ -113,7 +84,7 @@ export default {
 @import '../style/style.scss';
 
 #contact {
-  width: 640px;
+  width: 100%;
 
   // .contact__title {
 

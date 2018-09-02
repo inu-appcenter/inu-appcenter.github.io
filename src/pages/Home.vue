@@ -11,6 +11,7 @@
             v-for="(value, key) in projectList"
             :key="key"
             :to="value.linkto"
+            v-scroll-to="{el: 'body', duration: 0}"
           )
             img.home__grid--img(
               :src="value.src"

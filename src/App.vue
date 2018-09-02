@@ -2,7 +2,7 @@
   div#app
     Header
     Hero(v-if="this.$route.path === '/'")
-    router-view(v-scroll-to="{el: 'body', duration: 0}")
+    router-view
     Footer
     Kakao
     vue-progress-bar
