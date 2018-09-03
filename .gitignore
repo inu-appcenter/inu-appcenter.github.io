@@ -4,6 +4,7 @@ node_modules/
 legacy/
 *.log
 *.cache
+.firebase/
 
 # Editor directories and files
 .idea

@@ -4,7 +4,7 @@
       div.hero__image
       div.container
         div.hero__text
-          h1.hero__text--title {{ nameKo }}
+          h1.hero__text--title {{ $t('generic.title') }}
           p.hero__text--subtitle {{ nameEnFull }}
 
         button.hero__scrolldown(

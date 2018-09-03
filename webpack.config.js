@@ -1,6 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
 const Dotenv = require('dotenv-webpack')
+require('es6-promise').polyfill()
 
 module.exports = {
   entry: './src/main.js',

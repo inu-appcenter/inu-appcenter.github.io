@@ -2,7 +2,7 @@
   div#about.container
     div#markdown.page__wrapper
       div.about__title
-        h1.about__title--title {{nameKo}}
+        h1.about__title--title {{ $t('generic.title') }}
         p.about__title--text
           | INU Appcenter is an academic club focused on mobile and web application developments, based in Incheon National University.
 

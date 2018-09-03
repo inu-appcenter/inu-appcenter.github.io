@@ -2,7 +2,7 @@
   div#contact.container
     div#markdown.page__wrapper
       div.contact__title
-        h1.contact__title--text {{nameKo}}
+        h1.contact__title--text {{ $t('generic.title') }}
 
       div.contact__info
         p.contact__info--text(
