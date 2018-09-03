@@ -24,7 +24,6 @@
 - [이동언](https://github.com/ide127)
 - 송진석
 - [김바른](https://github.com/qkfms2298)
-- 김지선
 - [최아현](https://github.com/ChoiAhHyun)
 - 김도연
 - [정고운](https://github.com/GowoonJ)

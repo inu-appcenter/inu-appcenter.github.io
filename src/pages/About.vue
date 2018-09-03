@@ -62,21 +62,22 @@ export default {
             href: 'coee',
           },
           { name: '김근영',
+            href: ''
           },
           { name: '이동언',
             href: 'ide127',
           },
           { name: '송진석',
+            href: ''
           },
           { name: '김바른',
             href: 'qkfms2298',
-          },
-          { name: '김지선',
           },
           { name: '최아현',
             href: 'ChoiAhHyun',
           },
           { name: '김도연',
+            href: ''
           },
           { name: '정고운',
             href: 'GowoonJ',
@@ -108,6 +109,7 @@ export default {
             href: 'dongdong97',
           },
           { name: '김민지',
+            href: ''
           },
           { name: '이형주',
             href: 'hyungju2',
@@ -116,17 +118,21 @@ export default {
             href: 'suhyun9921',
           },
           { name: '전예린',
+            href: ''
           },
           { name: '유용상',
+            href: ''
           },
         ],
         Server: [
           { name: '권순재',
+            href: ''
           },
           { name: '최찬호',
             href: 'ftilrftilr12',
           },
           { name: '권대우',
+            href: ''
           },
           { name: '임동완',
             href: 'doukong',
@@ -138,6 +144,7 @@ export default {
             href: 'SonHyeSeon',
           },
           { name: '한현우',
+            href: ''
           },
           { name: '노창환',
             href: 'nohchanghwan',
@@ -154,22 +161,31 @@ export default {
             href: 'Woongdesign',
           },
           { name: '김민아',
+            href: ''
           },
           { name: '남효신',
+            href: ''
           },
           { name: '김리현',
+            href: 'KLeehy'
           },
           { name: '정준기',
+            href: ''
           },
           { name: '정서연',
+            href: ''
           },
           { name: '양효정',
+            href: ''
           },
           { name: '진정민',
+            href: ''
           },
           { name: '이예린',
+            href: ''
           },
           { name: '문보은',
+            href: ''
           },
         ]
       }
