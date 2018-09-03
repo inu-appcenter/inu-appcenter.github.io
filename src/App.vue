@@ -19,6 +19,8 @@ export default {
 
   data () {
     return {
+      u: window.location.host,
+      f: 'inu-appcenter.firebaseapp.com'
     }
   },
 
@@ -44,6 +46,10 @@ export default {
   },
 
   created () {
+    if (this.u.indexOf(this.f) != -1) {
+      window.location.href = 'https://' + this.f;
+    }
+
     this.$Progress.start()
     this.$router.beforeEach((to, from, next) => {
       if (to.meta.progress !== undefined) {
