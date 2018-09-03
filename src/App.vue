@@ -19,14 +19,14 @@ export default {
 
   data () {
     return {
-      f: 'inu-appcenter.firebaseapp.com',
+      o: 'inu-appcenter.github.io',
+      f: 'https://inu-appcenter.firebaseapp.com',
     }
   },
 
-  created () {
-    let u = window.location.href
-    if (u.indexOf(this.f) != 1) {
-      u = this.f
+  beforeMount () {
+    if (window.location.href.indexOf(this.o) > -1) {
+      window.location.href = this.f
     }
   },
 
