@@ -11,8 +11,6 @@ import * as VueGoogleMaps from 'vue2-google-maps'
 import firebase from 'firebase/app'
 import {globalVar} from '@/globalVar'
 
-import '@/style/style.scss'
-
 // https://www.npmjs.com/package/vue-markdown-loader
 
 Vue.use(Toasted)
@@ -30,7 +28,6 @@ Vue.use(VueGoogleMaps, {
 
 Vue.use(VueProgressBar, {
   color: '#034A9A',
-  failedColor: 'red',
   height: '2px'
 })
 

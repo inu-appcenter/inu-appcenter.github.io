@@ -81,7 +81,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../style/style.scss';
 
 #contact {
   width: 100%;

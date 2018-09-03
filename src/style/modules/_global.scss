@@ -51,7 +51,6 @@ html {
   @include font-settings();
   @include font-stack-html();
   @include font-size($grid4x);
-  @include line-height($grid4x);
 }
 
 
@@ -70,13 +69,11 @@ a {
 h1 {
   font-weight: 900;
   @include font-size($grid8x);
-  @include line-height($grid8x);
 }
 
 h3 {
   font-weight: 900;
   @include font-size($grid5x);
-  @include line-height($grid5x);
 }
 
 p,

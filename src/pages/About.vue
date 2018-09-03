@@ -199,7 +199,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../style/style.scss';
 
 #about {
 
