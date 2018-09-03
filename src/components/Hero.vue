@@ -44,7 +44,7 @@ $baseURI: 'https://images.unsplash.com/photo-1511376777868-611b54f68947?ixlib=rb
   background-position: center center;
 
   @media #{$pablet} {
-    max-height: calc(96vh - #{$grid14x});
+    max-height: calc(96vh - #{$grid16x});
   }
 
   .hero__text {
