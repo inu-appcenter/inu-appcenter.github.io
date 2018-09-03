@@ -19,7 +19,14 @@ export default {
 
   data () {
     return {
+      u: window.location.href,
+      f: 'inu-appcenter.firebaseapp.com'
+    }
+  },
 
+  beforeCreate () {
+    if (this.u.indexOf(this.f) != 1) {
+      this.$route.path = this.f
     }
   },
 
@@ -57,12 +64,6 @@ export default {
     this.$router.afterEach((to, from) => {
       this.$Progress.finish()
     })
-
-    let u = window.location.href
-    let f = 'inu-appcenter.firebaseapp.com'
-    if (u.indexOf(f) != -1) {
-      window.location.href = 'https://' + f;
-    }
   },
 }
 </script>
