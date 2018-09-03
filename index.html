@@ -35,7 +35,7 @@
     <meta property="og:description" content="인천대학교 앱센터 | Incheon National University App Center">
     <meta property="og:image" content="/src/assets/dist/metacard.png">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://inu-appcenter.github.io">
+    <meta property="og:url" content="https://inu-appcenter.firebaseapp.com">
 
     <meta name="twitter:title" content="인천대학교 앱센터 | Incheon National University App Center">
     <meta name="twitter:description" content="인천대학교 앱센터 | Incheon National University App Center">
@@ -45,11 +45,18 @@
     <meta itemprop="description" content="인천대학교 앱센터 | Incheon National University App Center">
     <meta itemprop="image" content="/src/assets/dist/metacard.png">
 
-    <link rel="canonical" href="https://inu-appcenter.github.io">
+    <link rel="canonical" href="https://inu-appcenter.firebaseapp.com">
 
   </head>
   <body>
     <div id="app"></div>
+    <script>
+      var u = window.location.host
+      var f = 'inu-appcenter.firebaseapp.com'
+      if (u.indexOf(f) != -1) {
+        window.location.href = 'https://' + f;
+      }
+    </script>
     <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script src="/dist/build.js"></script>
   </body>
