@@ -8,7 +8,7 @@ import Toasted from 'vue-toasted'
 import VueProgressBar from 'vue-progressbar'
 import VueScrollReveal from 'vue-scroll-reveal'
 import * as VueGoogleMaps from 'vue2-google-maps'
-import firebase from 'firebase'
+import firebase from 'firebase/app'
 import {globalVar} from '@/globalVar'
 
 import '@/style/style.scss'
