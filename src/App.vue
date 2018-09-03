@@ -19,14 +19,14 @@ export default {
 
   data () {
     return {
-      u: window.location.href,
-      f: 'inu-appcenter.firebaseapp.com'
+      f: 'inu-appcenter.firebaseapp.com',
     }
   },
 
-  beforeCreate () {
-    if (this.u.indexOf(this.f) != 1) {
-      this.$route.path = this.f
+  created () {
+    let u = window.location.href
+    if (u.indexOf(this.f) != 1) {
+      u = this.f
     }
   },
 
