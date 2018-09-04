@@ -29,9 +29,15 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import {globalVar} from '@/globalVar'
+import Toasted from 'vue-toasted'
+import VueClipboard from 'vue-clipboard2'
 import GoogleMaps from '@/components/GoogleMaps'
-import MailForm from '@/components/MailForm'
+// import MailForm from '@/components/MailForm'
+
+Vue.use(Toasted)
+Vue.use(VueClipboard)
 
 export default {
   name: 'contact',
@@ -75,7 +81,7 @@ export default {
 
   components: {
     GoogleMaps,
-    MailForm
+    // MailForm
   },
 }
 </script>

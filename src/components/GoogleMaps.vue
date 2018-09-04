@@ -13,14 +13,23 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import {globalVar} from '@/globalVar'
+import * as VueGoogleMaps from 'vue2-google-maps'
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: process.env.GOOGLE_API,
+    libraries: 'places',
+  },
+}) // -> .env
 
 export default {
   name: "GoogleMap",
 
   data() {
     return {
-      center: { lat: globalVar.lat, lng: globalVar.lng },
+      // center: { lat: globalVar.lat, lng: globalVar.lng },
       adr: '인천대학교 송도캠퍼스 4호관 107호'
     }
   },

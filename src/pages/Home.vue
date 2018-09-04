@@ -26,6 +26,8 @@
 import {globalVar} from '@/globalVar'
 import TopBtn from '@/components/TopBtn'
 
+// https://www.npmjs.com/package/vue-markdown-loader
+
 export default {
   name: 'home',
 

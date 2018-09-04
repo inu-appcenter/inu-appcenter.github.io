@@ -9,28 +9,35 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Footer from '@/components/Footer'
 import Kakao from '@/components/Kakao'
+import VueProgressBar from 'vue-progressbar'
+
+Vue.use(VueProgressBar, {
+  color: '#034A9A',
+  height: '2px'
+})
 
 export default {
   name: 'app',
 
   data () {
     return {
-      o: 'inu-appcenter.github.io',
+      g: 'inu-appcenter.github.io',
       f: 'https://inu-appcenter.firebaseapp.com',
     }
   },
 
   created () {
-    // redirect
-    if (window.location.href.indexOf(this.o) > -1) {
+    // redirect to f
+    if (window.location.href.indexOf(this.g) > -1) {
       window.location.href = this.f
     }
 
-    // progressbar
+    // load progressbar
     this.$Progress.start()
     this.$router.beforeEach((to, from, next) => {
       if (to.meta.progress !== undefined) {
@@ -45,6 +52,10 @@ export default {
     })
   },
 
+  mounted () {
+    this.$Progress.finish()
+  },
+
   components: {
     Header,
     Hero,
@@ -52,6 +63,7 @@ export default {
     Kakao
   },
 
+  // set target (_blank) for a tags w/ #markdown
   updated () {
     let getAnchorTags = document.querySelectorAll('#markdown a');
 
@@ -60,10 +72,6 @@ export default {
       if(!getAnchorTarget)
         anchor.setAttribute('target', '_blank')
     })
-  },
-
-  mounted () {
-    this.$Progress.finish()
   },
 }
 </script>

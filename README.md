@@ -32,7 +32,6 @@
 ### iOS
 
 - [김선일](https://github.com/Seonift)
-- [최은영](https://github.com/emily7485)
 - [이준상](https://github.com/zunzunzun)
 - [조용문](https://github.com/choymoon)
 - [조준영](https://github.com/youngblu)
@@ -69,3 +68,19 @@
 - 진정민
 - 이예린
 - 문보은
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# image compresser
+gulp watch
+
+# serve with hot reload at localhost:8000
+npm run dev
+
+# build for production with minification
+npm run build
+```
