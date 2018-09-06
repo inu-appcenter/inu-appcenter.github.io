@@ -60,7 +60,7 @@ $baseURI: '../assets/dist/hero.jpg';
       position: absolute;
       text-align: center;
       margin-right: -50%;
-      transform: translate(-50%, -50%);
+      @include transform(translate(-50%, -50%));
 
       .hero__text--title {
 
@@ -84,8 +84,8 @@ $baseURI: '../assets/dist/hero.jpg';
       display: inline-block;
       border: 1px solid #fff;
       transition: all .25s ease;
-      transform: translateX(-50%);
       @include border-radius($grid12x);
+      @include transform(translateX(-50%));
 
       &:hover {
         background-color: $brand;

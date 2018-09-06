@@ -31,19 +31,19 @@ export default {
     @keyframes popup {
       from {
         opacity: 0;
-        transform: scale(0);
+        @include transform(scale(0));
       }
       to {
         opacity: 1;
-        transform: scale(1);
+        @include transform(scale(1));
       }
     }
 
     right: $grid4x;
     bottom: $grid4x;
     position: fixed;
-    transform: scale(0);
     animation: popup .25s ease-in-out 2.5s 1 forwards;
+    @include transform(scale(0));
 
     img {
       cursor: pointer;
@@ -52,6 +52,7 @@ export default {
       @include box-shadow($grid3x, $grid4x, $black08);
 
       &:hover {
+        @include transform(scale(1.05));
         @include box-shadow($grid3x, $grid4x, $black16);
       }
     }

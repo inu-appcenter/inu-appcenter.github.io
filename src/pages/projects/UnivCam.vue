@@ -4,22 +4,19 @@
 </template>
 
 <script>
-import {globalVar} from '@/globalVar'
+import Vue from 'vue'
+
 import UnivCam from '@/md/projects/univcam.md'
 
-// https://www.npmjs.com/package/vue-markdown-loader
-
 export default {
-  name: 'univcam',
-
   data () {
     return {
-      baseURI: globalVar.univCam,
+
     }
   },
 
   components: {
-    UnivCam
+    UnivCam,
   },
 }
 </script>

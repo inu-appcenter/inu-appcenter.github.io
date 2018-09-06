@@ -10,7 +10,7 @@
           router-link.home__grid--list(
             v-for="(value, key) in projectList"
             :key="key"
-            :to="value.linkto"
+            :to="value.href"
             v-scroll-to="{el: 'body', duration: 0}"
           )
             img.home__grid--img(
@@ -26,8 +26,6 @@
 import {globalVar} from '@/globalVar'
 import TopBtn from '@/components/TopBtn'
 
-// https://www.npmjs.com/package/vue-markdown-loader
-
 export default {
   name: 'home',
 
@@ -40,16 +38,15 @@ export default {
     return {
       projectList: {
         univcam: {
-          title: 'UnivCam',
-          linkto: 'univcam',
-          src: 'https://spemer.com/img/works/univcam/thumb.png'
+          href: 'univcam',
+          src: 'https://spemer.com/img/works/univcam/thumb.png',
         },
       }
     }
   },
 
   components: {
-    TopBtn
+    TopBtn,
   },
 }
 </script>
@@ -78,8 +75,8 @@ export default {
         @include border-radius($grid2x);
 
         &:hover {
-          transition: all .25s ease;
           border: 1px solid transparent;
+          @include transform(translateY(-1%));
           @include box-shadow($grid, $grid2x, $black16);
         }
       }

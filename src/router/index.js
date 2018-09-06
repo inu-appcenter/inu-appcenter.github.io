@@ -20,10 +20,9 @@ export default new VueRouter({
       path: '/',
       name: 'home',
       component: Home,
-      children: [,
+      children: [
         {
-          path: 'univcam',
-          name: 'univcam',
+          path: '/univcam',
           component: UnivCam
         },
       ]
