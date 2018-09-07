@@ -74,9 +74,19 @@
   }
 }
 
+
+
+/* ==============================
+  toast
+============================== */
 .toasted.primary.default {
   font-weight: 500;
+  padding: auto $grid4x;
   @include font-size(12px);
   @include box-shadow($grid, $grid2x, $black16);
   @include border-radius($grid16x !important);
+
+  @media #{$pablet} {
+    white-space: nowrap;
+  }
 }

@@ -44,14 +44,14 @@ $baseURI: '../assets/dist/hero.jpg';
   background-repeat: no-repeat;
   background-position: center center;
 
+  @media #{$tablet} {
+    max-height: calc(92vh - #{$grid16x});
+  }
+
 
   .hero__dim {
-    height: 640px;
+    height: 100%;
     background-color: $black38;
-
-    @media #{$pablet} {
-      max-height: calc(96vh - #{$grid16x});
-    }
 
     .hero__text {
       top: 50%;
