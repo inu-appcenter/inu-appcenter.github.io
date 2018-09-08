@@ -77,7 +77,7 @@ export default {
         color: $text999;
         margin-top: $grid4x;
         transition: all .25s ease;
-        padding: $grid2x $grid4x $grid4x $grid4x;
+        padding: 0 $grid4x $grid4x $grid4x;
         @include font-size($grid6x);
 
         &:hover {

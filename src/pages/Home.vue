@@ -15,6 +15,7 @@
           )
             img.home__grid--img(
               :src="value.src"
+              v-tooltip.bottom="{content: key, delay: {show: 500, hide: 100}}"
             )
 
         TopBtn(
@@ -37,7 +38,7 @@ export default {
   data () {
     return {
       projectList: {
-        univcam: {
+        UnivCam: {
           href: 'univcam',
           src: 'https://spemer.com/img/works/univcam/thumb.png',
         },

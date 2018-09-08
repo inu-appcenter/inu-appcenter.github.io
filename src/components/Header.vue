@@ -6,10 +6,12 @@
           router-link(
             :to="'/home'"
             v-scroll-to="{el: 'body', duration: 0}"
+            v-tooltip.bottom="{content: 'Home', delay: {show: 500, hide: 100}}"
           )
             img.header__logo--img(
               src="../assets/dist/favicon.svg"
             )
+
         div.header__link
           router-link.header__link--each(
             v-for="(value, key) in menuList"
