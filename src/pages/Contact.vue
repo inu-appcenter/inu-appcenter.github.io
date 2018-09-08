@@ -19,7 +19,7 @@
           span.contact__info--link(
             @click="toast"
             v-clipboard:copy="mail.text"
-            v-tooltip.bottom="{content: '복사하려면 클릭하세요', delay: {show: 500, hide: 100}}"
+            v-tooltip.bottom="{content: '이메일 주소를 복사하려면 클릭하세요', delay: {show: 500, hide: 100}}"
           ) {{ mail.text }}
             i.fa.fa-clipboard
 

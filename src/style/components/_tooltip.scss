@@ -4,10 +4,13 @@
   @include font-size($grid3x);
 
   .tooltip-inner {
-    background: $black78;
     color: white;
-    border-radius: $grid4x;
-    padding: $grid $grid3x $grid;
+    font-weight: 500;
+    background: $black78;
+    padding: $grid2x $grid4x !important;
+    @include font-size(12px);
+    @include border-radius($grid32x !important);
+    @include box-shadow($grid, $grid2x, $black16);
   }
 
   .tooltip-arrow {
