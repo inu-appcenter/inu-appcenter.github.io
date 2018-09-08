@@ -3,8 +3,8 @@
     v-scroll-to="{el: 'body', duration: 0}"
   )
     button.topbtn__btn(
-      v-scroll-reveal="{ delay: 200 }"
     ) Top
+      //- v-scroll-reveal="{ delay: 200 }"
 </template>
 
 <script>
