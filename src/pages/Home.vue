@@ -25,7 +25,7 @@
 
 <script>
 import {globalVar} from '@/globalVar'
-import TopBtn from '@/components/TopBtn'
+import TopBtn from '@/components/misc/TopBtn'
 
 export default {
   name: 'home',

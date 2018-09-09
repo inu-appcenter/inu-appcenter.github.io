@@ -24,8 +24,6 @@
             i.fa.fa-clipboard
 
       GoogleMaps
-
-      //- MailForm
 </template>
 
 <script>
@@ -33,8 +31,7 @@ import Vue from 'vue'
 import {globalVar} from '@/globalVar'
 import Toasted from 'vue-toasted'
 import VueClipboard from 'vue-clipboard2'
-import GoogleMaps from '@/components/GoogleMaps'
-// import MailForm from '@/components/MailForm'
+import GoogleMaps from '@/components/misc/GoogleMaps'
 
 Vue.use(Toasted)
 Vue.use(VueClipboard)
@@ -81,8 +78,8 @@ export default {
 
   components: {
     GoogleMaps,
-    // MailForm
   },
+
 }
 </script>
 

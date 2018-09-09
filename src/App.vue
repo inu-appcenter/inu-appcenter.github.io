@@ -13,7 +13,7 @@ import Vue from 'vue'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Footer from '@/components/Footer'
-import Kakao from '@/components/Kakao'
+import Kakao from '@/components/misc/Kakao'
 import VueProgressBar from 'vue-progressbar'
 
 Vue.use(VueProgressBar, {
