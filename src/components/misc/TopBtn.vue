@@ -3,8 +3,8 @@
     v-scroll-to="{el: 'body', duration: 0}"
   )
     button.topbtn__btn(
+      v-ripple
     ) {{ $t('generic.top') }}
-      //- v-scroll-reveal="{ delay: 200 }"
 </template>
 
 <script>
@@ -13,9 +13,13 @@ export default {
 
   data () {
     return {
-      tooltip: '맨 위로'
+      tooltip: '맨 위로',
     }
   },
+
+  methods: {
+  },
+
 }
 </script>
 
