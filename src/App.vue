@@ -65,7 +65,7 @@ export default {
 
   // set target (_blank) for a tags w/ #markdown
   updated () {
-    let getAnchorTags = document.querySelectorAll('#markdown a');
+    let getAnchorTags = document.querySelectorAll('section a');
 
     [...getAnchorTags].forEach(anchor => {
       let getAnchorTarget = anchor.getAttribute('target')

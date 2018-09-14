@@ -238,7 +238,7 @@ You can see more details about UnivCam’s design on [Behance](https://www.behan
 
 - [이준상](https://github.com/zunzunzun)
 - [조용문](https://github.com/choymoon)
-- [조준영](https://github.com/chojunyng)
+- [조준영](https://github.com/yngblu)
 
 ### Design
 

@@ -97,7 +97,7 @@ export default {
             href: 'choymoon',
           },
           { name: '조준영',
-            href: 'youngblu',
+            href: 'yngblu',
           },
           { name: '김재희',
             href: 'jaehui327',
