@@ -37,18 +37,20 @@ export default {
 
   data () {
     return {
+      // add each projects below
       projectList: {
         UnivCam: {
           href: 'univcam',
           src: 'https://spemer.com/img/works/univcam/thumb.png',
         },
-      }
+      },
     }
   },
 
   components: {
     TopBtn,
   },
+
 }
 </script>
 

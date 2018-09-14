@@ -6,7 +6,7 @@ import Home from '@/pages/Home'
 import Contact from '@/pages/Contact'
 import About from '@/pages/About'
 
-import UnivCam from '@/pages/projects/UnivCam'
+import UnivCam from '@/projects/vue/UnivCam'
 
 
 Vue.use(VueRouter)

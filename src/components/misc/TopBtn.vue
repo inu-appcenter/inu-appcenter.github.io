@@ -3,7 +3,6 @@
     v-scroll-to="{el: 'body', duration: 0}"
   )
     button.topbtn__btn(
-      v-ripple
     ) {{ $t('generic.top') }}
 </template>
 
