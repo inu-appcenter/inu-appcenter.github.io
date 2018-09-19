@@ -37,18 +37,28 @@ export default {
 
   data () {
     return {
-      // add each projects below
       projectList: {
-
+      // add each projects below
             INUClub: {
-              href: 'inuclub',
+              href: 'INUClub',
               src: 'src/assets/dist/splash.png',
             },
+            INUM: {
+              href: 'INUM',
+              src: 'https://github.com/inu-appcenter/InuMarketIos/blob/master/InuMarket/InuMarket/Assets.xcassets/AppIcon.appiconset/ItunesArtwork@2x.png?raw=true',
+            },
             UnivCam: {
-              href: 'univcam',
+              href: 'UnivCam',
               src: 'https://spemer.com/img/works/univcam/thumb.png',
             },
-
+            INUBus: {
+              href: 'INUBus',
+              src: 'https://github.com/inu-appcenter/INU-Bus-Android/blob/master/app/src/main/res/drawable-xxxhdpi/ic_logo.png?raw=true',
+            },
+            Cafeteria: {
+              href: 'Cafeteria',
+              src: 'https://github.com/inu-appcenter/inu_cafeteria/blob/master/inu_cafeteria/Assets.xcassets/AppIcon.appiconset/logo@2x.png?raw=true',
+            },
       },
     }
   },

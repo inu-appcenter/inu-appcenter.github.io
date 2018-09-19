@@ -73,6 +73,7 @@ export default {
         anchor.setAttribute('target', '_blank')
     })
   },
+
 }
 </script>
 
