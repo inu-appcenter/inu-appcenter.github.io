@@ -6,7 +6,7 @@ import Home from '@/pages/Home'
 import Contact from '@/pages/Contact'
 import About from '@/pages/About'
 
-import Project from '@/projects/vue/Project'
+import Project from '@/components/Project'
 
 
 Vue.use(VueRouter)

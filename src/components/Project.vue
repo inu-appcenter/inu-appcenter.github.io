@@ -7,8 +7,8 @@
 <script>
 import {globalVar} from '@/globalVar'
 
-import UnivCam from '@/projects/markdown/univcam.md'
-import INUClub from '@/projects/markdown/inuclub.md'
+import UnivCam from '@/markdown/univcam.md'
+import INUClub from '@/markdown/inuclub.md'
 
 export default {
   components: {
