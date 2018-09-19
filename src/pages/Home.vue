@@ -39,13 +39,13 @@ export default {
     return {
       projectList: {
       // add each projects below
-            INUClub: {
-              href: 'INUClub',
-              src: 'src/assets/dist/splash.png',
-            },
             INUM: {
               href: 'INUM',
-              src: 'https://github.com/inu-appcenter/InuMarketIos/blob/master/InuMarket/InuMarket/Assets.xcassets/AppIcon.appiconset/ItunesArtwork@2x.png?raw=true',
+              src: 'src/assets/dist/INUM.png',
+            },
+            INUClub: {
+              href: 'INUClub',
+              src: 'src/assets/dist/INUClub.png',
             },
             UnivCam: {
               href: 'UnivCam',
@@ -53,11 +53,11 @@ export default {
             },
             INUBus: {
               href: 'INUBus',
-              src: 'https://github.com/inu-appcenter/INU-Bus-Android/blob/master/app/src/main/res/drawable-xxxhdpi/ic_logo.png?raw=true',
+              src: 'src/assets/dist/INUBus.png',
             },
             Cafeteria: {
               href: 'Cafeteria',
-              src: 'https://github.com/inu-appcenter/inu_cafeteria/blob/master/inu_cafeteria/Assets.xcassets/AppIcon.appiconset/logo@2x.png?raw=true',
+              src: 'src/assets/dist/Cafeteria.png',
             },
       },
     }

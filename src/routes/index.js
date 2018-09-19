@@ -25,8 +25,8 @@ export default new VueRouter({
           path: '/project',
           component: Project,
           alias: [
-            '/INUClub',
             '/INUM',
+            '/INUClub',
             '/UnivCam',
             '/INUBus',
             '/Cafeteria',

@@ -36,7 +36,7 @@ $baseURI: '../assets/dist/hero.jpg';
 
 #hero {
   width: 100%;
-  height: 640px;
+  height: 480px;
   position: relative;
   margin-top: $grid14x;
   background-image: url('#{$baseURI}');
