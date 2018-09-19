@@ -6,8 +6,7 @@ import Home from '@/pages/Home'
 import Contact from '@/pages/Contact'
 import About from '@/pages/About'
 
-import UnivCam from '@/projects/vue/UnivCam'
-import INUClub from '@/projects/vue/INUClub'
+import Project from '@/projects/vue/Project'
 
 
 Vue.use(VueRouter)
@@ -23,28 +22,28 @@ export default new VueRouter({
       component: Home,
       children: [
         {
-          path: '/univcam',
-          component: UnivCam
-        },
-        {
-          path: '/inuclub',
-          component: INUClub
+          path: '/project',
+          component: Project,
+          alias: [
+            '/univcam',
+            '/inuclub',
+          ]
         },
       ]
     },
     {
       path: '*',
-      redirect: '/'
+      redirect: '/',
     },
     {
       path: '/about',
       name: 'about',
-      component: About
+      component: About,
     },
     {
       path: '/contact',
       name: 'contact',
-      component: Contact
+      component: Contact,
     },
   ]
 })

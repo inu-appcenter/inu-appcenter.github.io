@@ -5,7 +5,7 @@
         router-view
 
         div.home__grid(
-           v-if="this.$route.path === '/'"
+          v-if="this.$route.path === '/'"
         )
           router-link.home__grid--list(
             v-for="(value, key) in projectList"
@@ -39,14 +39,16 @@ export default {
     return {
       // add each projects below
       projectList: {
-        INUClub: {
-          href: 'inuclub',
-          src: 'src/assets/dist/splash.png',
-        },
-        UnivCam: {
-          href: 'univcam',
-          src: 'https://spemer.com/img/works/univcam/thumb.png',
-        },
+
+            INUClub: {
+              href: 'inuclub',
+              src: 'src/assets/dist/splash.png',
+            },
+            UnivCam: {
+              href: 'univcam',
+              src: 'https://spemer.com/img/works/univcam/thumb.png',
+            },
+
       },
     }
   },
