@@ -39,11 +39,21 @@ export default {
     return {
       // add each projects below
       projectList: {
+        INUClub: {
+          href: 'inuclub',
+          src: 'src/assets/dist/splash.png',
+        },
         UnivCam: {
           href: 'univcam',
           src: 'https://spemer.com/img/works/univcam/thumb.png',
         },
       },
+    }
+  },
+
+  computed: {
+    reverseItems() {
+      return this.projectList.slice().reverse();
     }
   },
 
@@ -74,7 +84,6 @@ export default {
         border: 1px solid $texteee;
         background-repeat: no-repeat;
         background-position: center center;
-        @include grid-layout();
         @include border-radius($grid2x);
 
         &:hover {

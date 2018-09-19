@@ -10,6 +10,9 @@ import VueScrollTo from 'vue-scrollto'
 import Ripple from 'vue-ripple-directive'
 import VueScrollReveal from 'vue-scroll-reveal'
 import {globalVar} from '@/globalVar'
+import VueRippler from 'vue-rippler'
+
+Vue.use(VueRippler)
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios

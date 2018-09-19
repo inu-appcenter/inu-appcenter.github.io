@@ -25,6 +25,7 @@
     "vue-meta": "^1.5.3",
     "vue-progressbar": "^0.7.5",
     "vue-ripple-directive": "^2.0.1",
+    "vue-rippler": "^0.3.4",
     "vue-router": "^3.0.1",
     "vue-scroll-reveal": "^1.0.8",
     "vue-scrollto": "^2.11.0",

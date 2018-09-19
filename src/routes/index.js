@@ -7,6 +7,7 @@ import Contact from '@/pages/Contact'
 import About from '@/pages/About'
 
 import UnivCam from '@/projects/vue/UnivCam'
+import INUClub from '@/projects/vue/INUClub'
 
 
 Vue.use(VueRouter)
@@ -24,6 +25,10 @@ export default new VueRouter({
         {
           path: '/univcam',
           component: UnivCam
+        },
+        {
+          path: '/inuclub',
+          component: INUClub
         },
       ]
     },

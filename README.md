@@ -1,4 +1,4 @@
-# INU Appcenter
+# INU Appcenter 👩‍💻
 
 > INU Appcenter is an academic club focused on mobile and web application developments, based in Incheon National University.
 
@@ -68,19 +68,3 @@
 - 진정민
 - 이예린
 - 문보은
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# image compresser
-gulp watch
-
-# serve with hot reload at localhost:8000
-npm run dev
-
-# build for production with minification
-npm run build
-```
