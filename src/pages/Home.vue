@@ -5,7 +5,7 @@
         router-view
 
         div.home__grid(
-          v-if="this.$route.path === '/'"
+          v-if="this.$route.path == '/'"
         )
           router-link.home__grid--list(
             v-for="(value, key) in projectList"
@@ -15,8 +15,9 @@
           )
             img.home__grid--img(
               :src="value.src"
-              v-tooltip.bottom="{content: key, delay: {show: 500, hide: 100}}"
+              v-tooltip.top="{content: key, delay: {show: 500, hide: 100}}"
             )
+            figcaption {{ value.caption }}
 
         TopBtn(
           v-if="this.$route.path !== '/'"
@@ -42,22 +43,27 @@ export default {
             INUM: {
               href: 'INUM',
               src: 'src/assets/dist/INUM.png',
+              caption: '인천대 중고나라',
             },
             INUClub: {
               href: 'INUClub',
               src: 'src/assets/dist/INUClub.png',
+              caption: '동아리어플',
             },
             UnivCam: {
               href: 'UnivCam',
               src: 'https://spemer.com/img/works/univcam/thumb.png',
+              caption: 'UnivCam',
             },
             INUBus: {
               href: 'INUBus',
               src: 'src/assets/dist/INUBus.png',
+              caption: '인천대 버스알림',
             },
             Cafeteria: {
               href: 'Cafeteria',
               src: 'src/assets/dist/Cafeteria.png',
+              caption: 'INU 카페테리아',
             },
       },
     }
@@ -103,6 +109,13 @@ export default {
           @include transform(translateY(-1%));
           @include box-shadow($grid, $grid2x, $black16);
         }
+      }
+
+      figcaption {
+        color: $text333;
+        font-weight: 700;
+        text-align: center;
+        @include font-size($grid4x);
       }
     }
   }
