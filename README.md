@@ -61,7 +61,7 @@
 - [김진웅](https://github.com/Woongdesign)
 - 김민아
 - 남효신
-- 김리현
+- [김리현](https://github.com/KLeehy)
 - 정준기
 - 정서연
 - 양효정

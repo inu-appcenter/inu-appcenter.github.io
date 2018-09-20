@@ -8,10 +8,8 @@ import About from '@/pages/About'
 
 import Project from '@/components/Project'
 
-
 Vue.use(VueRouter)
 Vue.use(Meta)
-
 
 export default new VueRouter({
   mode: 'history',

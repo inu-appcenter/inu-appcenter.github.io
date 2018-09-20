@@ -20,10 +20,11 @@ section,
 
   img {
     margin: 0 auto;
-    display: block;
     max-width: 100%;
     margin-top: $grid8x;
+    display: inline-block;
     margin-bottom: $grid4x;
+    border: 1px solid $texteee;
   }
 
   em {
