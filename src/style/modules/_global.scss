@@ -89,8 +89,12 @@ span {
   }
 }
 
+::-moz-selection {
+  background-color: transparent;
+}
+
 ::selection {
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 button {

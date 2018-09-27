@@ -1,10 +1,10 @@
 <template lang="pug">
   div#project
     INUM(v-if="this.$route.path === '/INUM'")
-    INUClub(v-else-if="this.$route.path === '/INUClub'")
-    UnivCam(v-else-if="this.$route.path === '/UnivCam'")
-    INUBus(v-else-if="this.$route.path === '/INUBus'")
-    Cafeteria(v-else-if="this.$route.path === '/Cafeteria'")
+    INUClub(v-if="this.$route.path === '/INUClub'")
+    UnivCam(v-if="this.$route.path === '/UnivCam'")
+    INUBus(v-if="this.$route.path === '/INUBus'")
+    Cafeteria(v-if="this.$route.path === '/Cafeteria'")
 </template>
 
 <script>

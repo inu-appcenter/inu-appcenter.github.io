@@ -10,7 +10,7 @@ export const globalVar = new Vue ({
     igURL: 'https://instagram.com/inuappcen',
     ghURL: 'https://github.com/inu-appcenter',
     mailTo: 'inuappcenter@gmail.com',
-    kakaoURL: 'https://pf.kakao.com/' + process.env.KAKAO_URL,
+    kakaoURL: 'https://pf.kakao.com/_xgxaSLd',
 
     lat: '37.376547',
     lng: '126.635774',

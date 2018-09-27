@@ -25,6 +25,10 @@ section,
     display: inline-block;
     margin-bottom: $grid4x;
     border: 1px solid $texteee;
+
+    @media #{$pablet} {
+      width: 100%;
+    }
   }
 
   em {
