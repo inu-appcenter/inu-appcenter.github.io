@@ -8,16 +8,16 @@ import App from '@/App.vue'
 import router from '@/routes'
 import VueI18n from 'vue-i18n'
 import VTooltip from 'v-tooltip'
+import VueRippler from 'vue-rippler'
 import VueScrollTo from 'vue-scrollto'
-import VueScrollReveal from 'vue-scroll-reveal'
 import {globalVar} from '@/globalVar'
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
 
 Vue.use(VTooltip)
+Vue.use(VueRippler)
 Vue.use(VueScrollTo)
-Vue.use(VueScrollReveal)
 
 Kakao.init(process.env.KAKAO_KEY)
 

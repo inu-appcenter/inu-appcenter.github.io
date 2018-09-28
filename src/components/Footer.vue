@@ -15,7 +15,7 @@
 
         div.footer__copyright
           p.footer__copyright--text
-            | © {{ thisYear }} INU Appcenter. All rights reserved.
+            | ⓒ {{ thisYear }} INU Appcenter. All rights reserved.
 </template>
 
 <script>
