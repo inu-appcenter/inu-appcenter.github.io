@@ -34,7 +34,7 @@
 - [김선일](https://github.com/Seonift)
 - [이준상](https://github.com/zunzunzun)
 - [조용문](https://github.com/choymoon)
-- [조준영](https://github.com/yngblu)
+- [조준영](https://github.com/junyng)
 - [김재희](https://github.com/jaehui327)
 - [황동균](https://github.com/dongdong97)
 - 김민지
