@@ -55,6 +55,14 @@
 - [노창환](https://github.com/nohchanghwan)
 - [임헌준](https://github.com/Limheonjun)
 
+### Web
+
+- [김성민](https://github.com/pinokio531)
+- [임동완](https://github.com/doukong)
+- [김광훈](https://github.com/kwang-hoon)
+- [류재경](https://github.com/ryujk)
+- [서 혁](https://github.com/spemer)
+
 ### Design
 
 - [서 혁](https://github.com/spemer)

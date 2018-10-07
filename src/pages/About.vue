@@ -150,6 +150,23 @@ export default {
             href: 'Limheonjun',
           },
         ],
+        Web: [
+          { name: '김성민',
+            href: 'pinokio531'
+          },
+          { name: '임동완',
+            href: 'doukong'
+          },
+          { name: '김광훈',
+            href: 'kwang-hoon'
+          },
+          { name: '류재경',
+            href: 'ryujk'
+          },
+          { name: '서혁',
+            href: 'spemer',
+          },
+        ],
         Design: [
           { name: '서혁',
             href: 'spemer',
