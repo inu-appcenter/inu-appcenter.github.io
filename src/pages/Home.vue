@@ -12,7 +12,7 @@
             :key="key"
             :to="value.href"
           )
-            img.home__grid--img(
+            progressive-img.home__grid--img(
               :src="value.src"
               v-tooltip.top="{content: key, delay: {show: 500, hide: 100}}"
             )

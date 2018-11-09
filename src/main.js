@@ -11,6 +11,7 @@ import VueI18n from 'vue-i18n'
 import VTooltip from 'v-tooltip'
 import VueRippler from 'vue-rippler'
 import VueScrollTo from 'vue-scrollto'
+import VueProgressiveImage from 'vue-progressive-image'
 import {messages} from './added'
 import {globalVar} from '@/globalVar'
 
@@ -21,6 +22,7 @@ Vue.use(VueI18n)
 Vue.use(VTooltip)
 Vue.use(VueRippler)
 Vue.use(VueScrollTo)
+Vue.use(VueProgressiveImage)
 Kakao.init(process.env.KAKAO_KEY)
 
 window.i18n = new VueI18n({

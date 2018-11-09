@@ -15,12 +15,13 @@
           v-for="(value, key) in value"
           :key="key"
         )
-          p.about__members--text {{ value.name }}
+          p.about__members--text {{ value.name }}:
             a.about__members--link(
               v-if="value.href"
               :href="'https://github.com/' + value.href"
               target="_blank"
-            ) :&nbsp;https://github.com/{{ value.href }}
+              v-tooltip.right="{content: value.name + '&#39;s GitHub (새 탭)', delay: {show: 500, hide: 100}}"
+            ) &nbsp;github.com/{{ value.href }}
 
       TopBtn
 </template>
