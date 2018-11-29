@@ -50,6 +50,24 @@ export default {
   background-color: #fff;
   @include box-shadow($grid2x, $grid3x);
 
+  // safari
+  @supports (-webkit-appearance:none) {
+    background-color: hsla(0, 0%, 100%, .8);
+    -webkit-backdrop-filter: saturate(180%) blur(16px);
+            backdrop-filter: saturate(180%) blur(16px);
+  }
+
+  // edge
+  @supports (-ms-ime-align:auto) {
+    background-color: hsla(0, 0%, 100%, .8);
+    -webkit-backdrop-filter: saturate(180%) blur(16px);
+            backdrop-filter: saturate(180%) blur(16px);
+  }
+
+  @media #{$ie}      { background-color: #fff; }
+  @media #{$chrome}  { background-color: #fff; }
+  @media #{$firefox} { background-color: #fff; }
+
   .header__container {
     margin: 0 auto;
 
