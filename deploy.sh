@@ -8,10 +8,12 @@ npm run build
 # deploy with firebase cli
 firebase deploy
 
+# get commit message
+read -p "Enter commit message: " commitmsg
+
 # commit
 git add .
-git commit -m 'BLD deploy'
+git commit -m $commitmsg
 git push
-
 
 exit
