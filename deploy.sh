@@ -1,4 +1,9 @@
 #!/bin/bash
+prjname="inu-appcenter.github.io"
+
+echo "=============================="
+echo ${prjname}
+echo "=============================="
 
 npm run dev
 
