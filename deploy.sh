@@ -5,6 +5,11 @@ echo "=============================="
 echo ${prjname}
 echo "=============================="
 
+# run gulpfile.js image resizer
+trap 'echo Stop gulp-watch' SIGINT
+sudo gulp watch
+trap SIGINT
+
 npm run dev
 
 # build
