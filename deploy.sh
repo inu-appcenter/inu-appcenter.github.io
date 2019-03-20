@@ -1,8 +1,6 @@
 #!/bin/bash
-prjname="inu-appcenter.github.io"
-
 echo "=============================="
-echo ${prjname}
+echo "${PWD##*/}"
 echo "=============================="
 
 # run gulpfile.js image resizer
