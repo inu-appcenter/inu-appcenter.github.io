@@ -3,8 +3,12 @@ echo "=============================="
 echo "${PWD##*/}"
 echo "=============================="
 
-# install dependencies
-npm install
+# get OS typs && install dependencies
+if [[ "$OSTYPE" == "win32" || "cygwin" || "msys" ]]; then
+  npm install --no-optional
+else
+  npm install
+fi
 
 # run gulpfile.js image resizer
 trap 'echo Stop gulp-watch' SIGINT
