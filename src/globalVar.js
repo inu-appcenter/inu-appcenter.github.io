@@ -15,6 +15,6 @@ export const globalVar = new Vue ({
     lat: '37.376547',
     lng: '126.635774',
 
-    univCam: 'https://rawgit.com/inu-appcenter/UnivCam-ios/master/README.md'
+    // univCam: 'https://rawgit.com/inu-appcenter/UnivCam-ios/master/README.md'
   }
 })
