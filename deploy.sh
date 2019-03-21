@@ -3,7 +3,7 @@ echo "=============================="
 echo "${PWD##*/}"
 echo "=============================="
 
-# get OS typs && install dependencies
+# get OS type && install dependencies
 if [[ "$OSTYPE" == "win32" || "cygwin" || "msys" ]]; then
   npm install --no-optional
 else
