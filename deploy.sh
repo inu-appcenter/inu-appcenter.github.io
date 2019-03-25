@@ -12,7 +12,7 @@ fi
 
 # run gulpfile.js image resizer
 trap 'echo Stop gulp-watch' SIGINT
-gulp watch
+sudo gulp watch
 trap SIGINT
 
 # serve with hot reload at localhost:8000
