@@ -217,7 +217,6 @@ export default {
 #about {
   .about__title {
     // .about__title--title {
-
     // }
 
     .about__title--text {

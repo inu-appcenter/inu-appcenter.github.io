@@ -12,8 +12,7 @@ module.exports = {
   },
   plugins: [new Dotenv()],
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.css$/,
         use: ['vue-style-loader', 'css-loader'],
       },

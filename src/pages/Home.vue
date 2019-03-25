@@ -39,6 +39,7 @@ export default {
     return {
       projectList: {
       // add each projects below
+      // 라우터(index.js), Project.vue 파일과 일치해야합니다
             INUM: {
               href: 'INUM',
               src: 'src/assets/dist/INUM.png',

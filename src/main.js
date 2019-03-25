@@ -12,8 +12,12 @@ import VTooltip from 'v-tooltip';
 import VueRippler from 'vue-rippler';
 import VueScrollTo from 'vue-scrollto';
 import VueProgressiveImage from 'vue-progressive-image';
-import { messages } from './added';
-import { globalVar } from '@/globalVar';
+import {
+  messages
+} from './added';
+import {
+  globalVar
+} from '@/globalVar';
 
 Vue.config.productionTip = false;
 Vue.prototype.$http = axios;

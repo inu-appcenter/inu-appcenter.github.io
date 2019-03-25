@@ -8,6 +8,7 @@
 </template>
 
 <script>
+// '@/markdown/*' 에 위치한 마크다운 파일들을 import 하고, 위에서 router로 불러오기 + '@/routes/index.js' 에 등록 필수
 import INUM from '@/markdown/INUM.md'
 import INUClub from '@/markdown/INUClub.md'
 import UnivCam from '@/markdown/UnivCam.md'

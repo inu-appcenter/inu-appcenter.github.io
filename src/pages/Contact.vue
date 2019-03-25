@@ -88,7 +88,6 @@ export default {
   width: 100%;
 
   // .contact__title {
-
   //   .contact__title--text {
 
   //   }
