@@ -82,9 +82,7 @@ export default {
 </script>
 
 <style lang="scss">
-
 #home {
-
   .home__grid {
     @include grid-layout();
 
@@ -93,11 +91,10 @@ export default {
     }
 
     .home__grid--list {
-
       .home__grid--img {
         max-width: 100%;
         background-size: cover;
-        transition: all .5s ease;
+        transition: all 0.5s ease;
         border: 1px solid $texteee;
         background-repeat: no-repeat;
         background-position: center center;

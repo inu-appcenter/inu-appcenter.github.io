@@ -1,7 +1,7 @@
 "use strict";
 const gulp = require('gulp'),
-      watch = require('gulp-watch'),
-      imagemin = require('gulp-imagemin');
+  watch = require('gulp-watch'),
+  imagemin = require('gulp-imagemin');
 
 
 /* ==============================
@@ -9,8 +9,8 @@ const gulp = require('gulp'),
 ============================== */
 gulp.task('img-resize', () =>
   gulp.src('./src/assets/src/*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('./src/assets/dist'))
+  .pipe(imagemin())
+  .pipe(gulp.dest('./src/assets/dist'))
 );
 
 

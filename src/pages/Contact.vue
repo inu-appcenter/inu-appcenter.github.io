@@ -84,7 +84,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 #contact {
   width: 100%;
 
@@ -96,13 +95,11 @@ export default {
   // }
 
   .contact__info {
-
     .contact__info--text {
       display: inline;
       @include line-height($grid5x);
 
       &:not(:last-child) {
-
         ::after {
           white-space: pre;
           content: '\a';

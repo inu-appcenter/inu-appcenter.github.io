@@ -66,13 +66,9 @@ export default {
 </script>
 
 <style lang="scss">
-
 #mailform {
-
   .container {
-
     .page__wrapper {
-
       input {
         width: 100%;
       }

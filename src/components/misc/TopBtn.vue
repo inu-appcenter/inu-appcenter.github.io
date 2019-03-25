@@ -23,9 +23,7 @@ export default {
 </script>
 
 <style lang="scss">
-
 #top {
-
   .topbtn__btn {
     border: none;
     outline: none;
@@ -39,7 +37,7 @@ export default {
     margin-top: $grid16x;
     border: $brand 1px solid;
     background-color: #fff;
-    transition: all .25s ease;
+    transition: all 0.25s ease;
     @include border-radius($grid32x);
 
     &:hover {

@@ -1,15 +1,15 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Meta from 'vue-meta'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Meta from 'vue-meta';
 
-import Home from '@/pages/Home'
-import Contact from '@/pages/Contact'
-import About from '@/pages/About'
+import Home from '@/pages/Home';
+import Contact from '@/pages/Contact';
+import About from '@/pages/About';
 
-import Project from '@/components/Project'
+import Project from '@/components/Project';
 
-Vue.use(VueRouter)
-Vue.use(Meta)
+Vue.use(VueRouter);
+Vue.use(Meta);
 
 export default new VueRouter({
   mode: 'history',
@@ -22,15 +22,9 @@ export default new VueRouter({
         {
           path: '/project',
           component: Project,
-          alias: [
-            '/INUM',
-            '/INUClub',
-            '/UnivCam',
-            '/INUBus',
-            '/Cafeteria',
-          ]
+          alias: ['/INUM', '/INUClub', '/UnivCam', '/INUBus', '/Cafeteria'],
         },
-      ]
+      ],
     },
     {
       path: '*',
@@ -47,7 +41,7 @@ export default new VueRouter({
       component: Contact,
     },
   ],
-  scrollBehavior (to, from, savedPosition) {
-    return { x: 0, y: 0 }
+  scrollBehavior(to, from, savedPosition) {
+    return { x: 0, y: 0 };
   },
-})
+});

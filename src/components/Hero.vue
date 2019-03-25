@@ -31,7 +31,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 $baseURI: '../assets/dist/hero.jpg';
 
 #hero {
@@ -48,7 +47,6 @@ $baseURI: '../assets/dist/hero.jpg';
     max-height: calc(92vh - #{$grid16x});
   }
 
-
   .hero__dim {
     height: 100%;
     background-color: $black38;
@@ -63,7 +61,6 @@ $baseURI: '../assets/dist/hero.jpg';
       @include transform(translate(-50%, -50%));
 
       .hero__text--title {
-
         @media #{$middle} {
           @include font-size($grid6x);
         }
@@ -81,7 +78,7 @@ $baseURI: '../assets/dist/hero.jpg';
       width: $grid12x;
       height: $grid12x;
       border: 1px solid #fff;
-      transition: all .25s ease;
+      transition: all 0.25s ease;
       position: absolute !important;
       display: inline-block !important;
       @include border-radius($grid12x);

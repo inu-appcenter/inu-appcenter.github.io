@@ -60,7 +60,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 #footer {
   width: 100%;
   margin-top: $grid8x;
@@ -72,11 +71,10 @@ export default {
     text-align: center;
 
     .footer__sns {
-
       .footer__sns--link {
         color: $text999;
         margin-top: $grid4x;
-        transition: all .25s ease;
+        transition: all 0.25s ease;
         padding: 0 $grid4x $grid4x $grid4x;
         @include font-size($grid6x);
 
@@ -86,21 +84,18 @@ export default {
         }
 
         &#fbIcon {
-
           &:hover {
             color: $fbIcon;
           }
         }
 
         &#igIcon {
-
           &:hover {
             color: $igIcon;
           }
         }
 
         &#ghIcon {
-
           &:hover {
             color: $ghIcon;
           }
@@ -109,7 +104,6 @@ export default {
     }
 
     .footer__copyright {
-
       .footer__copyright--text {
         @include font-size($grid3x);
       }

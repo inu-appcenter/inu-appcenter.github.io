@@ -1,6 +1,6 @@
-import Vue from 'vue'
+import Vue from 'vue';
 
-export const globalVar = new Vue ({
+export const globalVar = new Vue({
   data: {
     nameKo: '인천대학교 앱센터',
     nameEn: 'INU Appcenter',
@@ -16,5 +16,5 @@ export const globalVar = new Vue ({
     lng: '126.635774',
 
     // univCam: 'https://rawgit.com/inu-appcenter/UnivCam-ios/master/README.md'
-  }
-})
+  },
+});

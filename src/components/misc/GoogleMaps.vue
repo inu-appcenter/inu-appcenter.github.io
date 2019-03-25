@@ -37,9 +37,7 @@ export default {
 </script>
 
 <style lang="scss">
-
 #google-map {
-
   .GmapMap {
     width: 100%;
     height: 50vh;

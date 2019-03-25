@@ -214,11 +214,8 @@ export default {
 </script>
 
 <style lang="scss">
-
 #about {
-
   .about__title {
-
     // .about__title--title {
 
     // }
@@ -229,13 +226,11 @@ export default {
   }
 
   .about__members--list {
-
     .about__members--title {
       margin-top: $grid12x;
     }
 
     .about__members {
-
       .about__members--text {
         font-weight: 900;
         margin-left: $grid2x;
