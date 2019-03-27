@@ -22,15 +22,9 @@
 export default {
   name: 'footer-el',
 
-  data () {
-    return {
-      year: '',
-    }
-  },
-
   computed: {
     thisYear() {
-      return this.year = new Date().getFullYear()
+      return this.$store.state.thisYear
     },
 
     snsList() {

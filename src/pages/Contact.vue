@@ -70,12 +70,6 @@ export default {
 #contact {
   width: 100%;
 
-  // .contact__title {
-  //   .contact__title--text {
-
-  //   }
-  // }
-
   .contact__info {
     .contact__info--text {
       display: inline;

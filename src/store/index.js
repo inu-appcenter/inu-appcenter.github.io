@@ -8,6 +8,8 @@ export default new Vuex.Store({
   debug: true,
 
   state: {
+    thisYear: new Date().getFullYear(),
+
     nameKo: '인천대학교 앱센터',
     nameEn: 'INU Appcenter',
     nameEnFull: 'Incheon National University Appcenter',
@@ -20,6 +22,12 @@ export default new Vuex.Store({
 
     lat: '37.376547',
     lng: '126.635774',
+
+    menuList: {
+      Home: '/home',
+      About: '/about',
+      Contact: '/contact'
+    },
 
     contactInfo: {
       kakao: {

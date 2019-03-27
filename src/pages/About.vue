@@ -15,7 +15,8 @@
           v-for="(value, key) in value"
           :key="key"
         )
-          p.about__members--text {{ value.name }}:
+          p.about__members--text {{ value.name }}
+            span(v-if="value.href") :
             a.about__members--link(
               v-if="value.href"
               :href="'https://github.com/' + value.href"
@@ -48,9 +49,6 @@ export default {
 <style lang="scss">
 #about {
   .about__title {
-    // .about__title--title {
-    // }
-
     .about__title--text {
       margin-bottom: $grid12x;
     }

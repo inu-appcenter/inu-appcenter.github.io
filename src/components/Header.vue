@@ -26,15 +26,12 @@
 export default {
   name: 'header-el',
 
-  data () {
-    return {
-      menuList: {
-        Home: '/home',
-        About: '/about',
-        Contact: '/contact'
-      },
+  computed: {
+    menuList() {
+      return this.$store.state.menuList
     }
   },
+
 }
 </script>
 

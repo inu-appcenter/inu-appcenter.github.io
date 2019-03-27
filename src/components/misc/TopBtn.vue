@@ -16,9 +16,6 @@ export default {
     }
   },
 
-  methods: {
-  },
-
 }
 </script>
 
