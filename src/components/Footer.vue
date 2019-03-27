@@ -19,42 +19,23 @@
 </template>
 
 <script>
-import {globalVar} from '@/globalVar'
-
 export default {
   name: 'footer-el',
 
   data () {
     return {
       year: '',
-
-      snsList: {
-        facebook: {
-          href: globalVar.fbURL,
-          iconID : 'fbIcon',
-          iconClass : 'facebook-square',
-          title: '페이스북'
-        },
-        instagram: {
-          href: globalVar.igURL,
-          iconID : 'igIcon',
-          iconClass : 'instagram',
-          title: '인스타그램'
-        },
-        github: {
-          href: globalVar.ghURL,
-          iconID : 'ghIcon',
-          iconClass : 'github',
-          title: '깃허브'
-        }
-      }
     }
   },
 
   computed: {
     thisYear() {
       return this.year = new Date().getFullYear()
-    }
+    },
+
+    snsList() {
+      return this.$store.state.snsList
+    },
   },
 }
 </script>

@@ -24,55 +24,16 @@
 </template>
 
 <script>
-import {globalVar} from '@/globalVar'
 import TopBtn from '@/components/misc/TopBtn'
 
 export default {
   name: 'home',
 
-  metaInfo: {
-    title: globalVar.nameKo,
-    titleTemplate: '%s',
-  },
-
-  data () {
-    return {
-      projectList: {
-      // add each projects below
-      // 라우터(index.js), Project.vue 파일과 일치해야합니다
-            INUM: {
-              href: 'INUM',
-              src: 'src/assets/dist/INUM.png',
-              caption: '인천대 중고나라',
-            },
-            INUClub: {
-              href: 'INUClub',
-              src: 'src/assets/dist/INUClub.png',
-              caption: '동아리어플',
-            },
-            UnivCam: {
-              href: 'UnivCam',
-              src: 'https://spemer.com/img/works/univcam/thumb.png',
-              caption: 'UnivCam',
-            },
-            INUBus: {
-              href: 'INUBus',
-              src: 'src/assets/dist/INUBus.png',
-              caption: '인천대 버스알림',
-            },
-            Cafeteria: {
-              href: 'Cafeteria',
-              src: 'src/assets/dist/Cafeteria.png',
-              caption: 'INU 카페테리아',
-            },
-      },
-    }
-  },
-
   computed: {
-    reverseItems() {
-      return this.projectList.slice().reverse();
-    }
+    projectList() {
+      return this.$store.state.projectList
+    },
+
   },
 
   components: {

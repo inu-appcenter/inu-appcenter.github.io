@@ -15,16 +15,17 @@
 </template>
 
 <script>
-import {globalVar} from '@/globalVar'
-
 export default {
   name: 'hero',
 
-  data () {
-    return {
-      nameKo: globalVar.nameKo,
-      nameEnFull: globalVar.nameEnFull,
-    }
+  computed: {
+    nameKo() {
+      return this.$store.state.nameKo
+    },
+
+    nameEnFull() {
+      return this.$store.state.nameEnFull
+    },
   },
 
 }

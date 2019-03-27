@@ -32,7 +32,7 @@ export default {
         Home: '/home',
         About: '/about',
         Contact: '/contact'
-      }
+      },
     }
   },
 }

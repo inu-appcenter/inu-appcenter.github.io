@@ -28,7 +28,6 @@
 
 <script>
 import Vue from 'vue'
-import {globalVar} from '@/globalVar'
 import Toasted from 'vue-toasted'
 import VueClipboard from 'vue-clipboard2'
 import GoogleMaps from '@/components/misc/GoogleMaps'
@@ -39,31 +38,15 @@ Vue.use(VueClipboard)
 export default {
   name: 'contact',
 
-  metaInfo: {
-    title: globalVar.nameKo,
-    titleTemplate: '%s - Contact',
-  },
+  computed: {
+    contactInfo() {
+      return this.$store.state.contactInfo
+    },
 
-  data () {
-    return {
-      nameKo: globalVar.nameKo,
-      contactInfo: {
-        kakao: {
-          name: '카카오톡 플러스친구',
-          href: globalVar.kakaoURL,
-          text: '@인천대앱센터',
-        },
-        fb: {
-          name: '페이스북',
-          href: globalVar.fbURL,
-          text: '앱센터 페이스북',
-        },
-      },
-      mail: {
-        name: '이메일',
-        text: globalVar.mailTo,
-      },
-    }
+    mail() {
+      return this.$store.state.mail
+    },
+
   },
 
   methods: {
