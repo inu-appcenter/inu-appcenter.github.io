@@ -14,8 +14,8 @@ echo "============================================================"
 dev_or_deploy() {
   while true; do
     printf "\n"
-    read -p "${BOLD}${GREEN}Run dev server(R) or Deploy directly?(D) ${RESET}" yn
-    case ${yn} in
+    read -p "${BOLD}${GREEN}Run dev server(R) or Deploy directly?(D) ${RESET}" rd
+    case ${rd} in
       [Rr]* )
         npm_install
         image_resizer
