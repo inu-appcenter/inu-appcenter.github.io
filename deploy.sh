@@ -3,6 +3,9 @@ BOLD=$(tput bold)
 RESET=$(tput sgr0)
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
+YELLOW=$(tput setaf 3)
+BLUE=$(tput setaf 4)
+PURPLE=$(tput setaf 5)
 
 echo "============================================================"
 echo "${BOLD}${PWD##*/}${RESET}"
@@ -17,6 +20,8 @@ dev_or_deploy() {
     read -p "${BOLD}${GREEN}Run dev server(R) or Deploy directly?(D) ${RESET}" rd
     case ${rd} in
       [Rr]* )
+        printf "\n"
+        echo "${BOLD}${PURPLE}🔥 Run dev server 🔥${RESET}"
         npm_install
         image_resizer
         npm_run_dev
@@ -26,7 +31,14 @@ dev_or_deploy() {
         git_push
         break;;
 
-      [Dd]* ) npm run build && firebase deploy; break;;
+      [Dd]* )
+        printf "\n"
+        echo "${BOLD}${PURPLE}🔥 npm run build 🔥${RESET}"
+        npm run build;
+        printf "\n"
+        echo "${BOLD}${PURPLE}🔥 firebase deploy 🔥${RESET}"
+        firebase deploy;
+        break;;
       * ) echo "Please answer R(un) or D(eploy).";;
     esac
   done
@@ -133,7 +145,7 @@ git_commit() {
         # if commitmsg empty
         if [ -z "$commitmsg" ]
         then
-          echo "${BOLD}${RED}Commit message is empty${RESET}"
+          echo "${BOLD}${RED}👻 Commit message is empty 👻${RESET}"
           commitmsg="Add files via upload"
         fi
 
@@ -156,7 +168,11 @@ git_push() {
     printf "\n"
     read -p "${BOLD}${GREEN}git push? (Y/n) ${RESET}" yn
     case ${yn} in
-      [Yy]* ) git push; break;;
+      [Yy]* )
+        printf "\n"
+        echo "${BOLD}${PURPLE}🔥 Push 🔥${RESET}"
+        git push;
+        break;;
       [Nn]* ) return 0;;
       * ) echo "Please answer yes or no.";;
     esac

@@ -5,27 +5,23 @@
 /* ==============================
   basic modules
 ============================== */
-@import
-  './modules/spoqa',
-  './modules/grid',
-  './modules/color',
-  './modules/mqbp',
-  './modules/global',
-  './modules/layout',
-  './modules/class';
+@import './modules/spoqa',
+'./modules/grid',
+'./modules/color',
+'./modules/mqbp',
+'./modules/global',
+'./modules/layout',
+'./modules/class';
 
 
 /* ==============================
   components
 ============================== */
-@import
-  './components/markdown',
-  './components/tooltip',
-  './components/ripple';
+@import './components/markdown',
+'./components/tooltip';
 
 
 /* ==============================
   pages specific
 ============================== */
-@import
-  './pages/alt';
+@import './pages/alt';

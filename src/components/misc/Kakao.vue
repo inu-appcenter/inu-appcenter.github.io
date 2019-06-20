@@ -12,7 +12,7 @@ export default {
   name: 'kakao-btn',
 
   methods: {
-    plusFriendChat() {
+    plusFriendChat: _ => {
       Kakao.PlusFriend.chat({
         plusFriendId: process.env.KAKAO_URL
       })

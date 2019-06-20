@@ -1,11 +1,23 @@
 /* ==============================
   box-shadow
 ============================== */
-@mixin box-shadow         ($val:$grid2x, $val2:$grid4x, $color:$black08){
-  -webkit-box-shadow:  0 $val $val2 $color;
-  -ms-box-shadow:      0 $val $val2 $color;
-  -o-box-shadow:       0 $val $val2 $color;
-  box-shadow:          0 $val $val2 $color;
+@mixin box-shadow ($val:$grid2x, $val2:$grid4x, $color:$black08) {
+  -webkit-box-shadow: 0 $val $val2 $color;
+  -ms-box-shadow: 0 $val $val2 $color;
+  -o-box-shadow: 0 $val $val2 $color;
+  box-shadow: 0 $val $val2 $color;
+}
+
+
+
+/* ==============================
+  drop-shadow
+============================== */
+@mixin drop-shadow ($val:$grid2x, $val2:$grid4x, $color:$black08) {
+  -webkit-filter: drop-shadow(0 $val $val2 $color);
+  -ms-filter: drop-shadow(0 $val $val2 $color);
+  -o-filter: drop-shadow(0 $val $val2 $color);
+  filter: drop-shadow(0 $val $val2 $color);
 }
 
 
@@ -13,8 +25,8 @@
 /* ==============================
   border-radius
 ============================== */
-@mixin border-radius    ($val:$grid4x){
-  border-radius:         $val;
+@mixin border-radius ($val:$grid4x) {
+  border-radius: $val;
 }
 
 
@@ -22,9 +34,9 @@
 /* ==============================
   border-radius
 ============================== */
-@mixin transform    ($val){
+@mixin transform ($val) {
   -webkit-transform: $val;
-          transform: $val;
+  transform: $val;
 }
 
 
@@ -32,7 +44,7 @@
 /* ==============================
   css grid layout
 ============================== */
-@mixin grid-layout($col:3, $row:$grid16x, $gap:$grid8x){
+@mixin grid-layout($col:3, $row:$grid16x, $gap:$grid8x) {
   display: grid;
   grid-template-columns: repeat($col, 1fr);
   grid-auto-rows: minmax($row, auto);

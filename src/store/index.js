@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
+import {
+  globalVar
+} from '@/globalVar'
 
 Vue.use(Vuex)
 
@@ -14,15 +17,6 @@ export default new Vuex.Store({
     nameEn: 'INU Appcenter',
     nameEnFull: 'Incheon National University Appcenter',
 
-    fbURL: 'https://www.facebook.com/INUAppCenter',
-    igURL: 'https://instagram.com/inuappcen',
-    ghURL: 'https://github.com/inu-appcenter',
-    mailTo: 'inuappcenter@gmail.com',
-    kakaoURL: 'https://pf.kakao.com/_xgxaSLd',
-
-    lat: '37.376547',
-    lng: '126.635774',
-
     menuList: {
       Home: '/home',
       About: '/about',
@@ -32,36 +26,36 @@ export default new Vuex.Store({
     contactInfo: {
       kakao: {
         name: '카카오톡 플러스친구',
-        href: this.kakaoURL,
+        href: globalVar.kakaoURL,
         text: '@인천대앱센터',
       },
       fb: {
         name: '페이스북',
-        href: this.fbURL,
+        href: globalVar.fbURL,
         text: '앱센터 페이스북',
       },
     },
 
     mail: {
       name: '이메일',
-      text: this.mailTo,
+      text: globalVar.mailTo,
     },
 
     snsList: {
       facebook: {
-        href: this.fbURL,
+        href: globalVar.fbURL,
         iconID: 'fbIcon',
         iconClass: 'facebook-square',
         title: '페이스북'
       },
       instagram: {
-        href: this.igURL,
+        href: globalVar.igURL,
         iconID: 'igIcon',
         iconClass: 'instagram',
         title: '인스타그램'
       },
       github: {
-        href: this.ghURL,
+        href: globalVar.ghURL,
         iconID: 'ghIcon',
         iconClass: 'github',
         title: '깃허브'

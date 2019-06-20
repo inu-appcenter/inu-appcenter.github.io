@@ -5,7 +5,6 @@
         div.header__logo
           router-link(
             :to="'/home'"
-            v-scroll-to="{el: 'body'}"
             v-tooltip.bottom="{content: 'Home', delay: {show: 500, hide: 100}}"
           )
             img.header__logo--img(
@@ -17,7 +16,6 @@
             v-for="(value, key) in menuList"
             :key="key"
             :to="value"
-            v-scroll-to="{el: 'body'}"
             v-tooltip.bottom="{content: key, delay: {show: 500, hide: 100}}"
           ) {{ key }}
 </template>

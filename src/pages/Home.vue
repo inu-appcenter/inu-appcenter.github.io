@@ -55,19 +55,20 @@ export default {
       }
 
       .home__grid--list {
+        cursor: pointer;
+
         .home__grid--img {
           max-width: 100%;
           background-size: cover;
-          transition: all 0.5s ease;
-          border: 1px solid $texteee;
+          transition: all 0.25s ease;
           background-repeat: no-repeat;
           background-position: center center;
-          @include border-radius($grid2x);
+          @include border-radius($grid4x);
+          @include drop-shadow($grid, $grid2x, $black08);
 
           &:hover {
-            border: 1px solid transparent;
             @include transform(translateY(-1%));
-            @include box-shadow($grid, $grid2x, $black16);
+            @include box-shadow($grid, $grid4x, $black08);
           }
         }
 

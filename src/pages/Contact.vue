@@ -12,7 +12,7 @@
           a.contact__info--link(
             target="_blank"
             :href="value.href"
-            v-tooltip.right="{content: value.name + '(새 탭)', delay: {show: 500, hide: 100}}"
+            v-tooltip.right="{content: `${value.name}(새 탭)`, delay: {show: 500, hide: 100}}"
           ) {{ value.text }}
 
         p.contact__info--text {{ mail.name }}:&nbsp;

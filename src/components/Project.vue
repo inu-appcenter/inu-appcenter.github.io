@@ -19,6 +19,6 @@ export default {
 
 <style lang="scss">
 #project {
-  padding: 80px 0;
+  padding: $grid24x 0;
 }
 </style>

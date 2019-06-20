@@ -10,7 +10,7 @@
             aria-hidden="true"
             :class="'fa-' + value.iconClass"
             :id="value.iconID"
-            v-tooltip.top="{content: '인천대학교 앱센터 ' + value.title + '(새 탭)', delay: {show: 500, hide: 100}}"
+            v-tooltip.top="{content: `인천대학교 앱센터 ${value.title}(새 탭)`, delay: {show: 500, hide: 100}}"
           )
 
         div.footer__copyright

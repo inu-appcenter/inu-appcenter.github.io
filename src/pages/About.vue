@@ -21,7 +21,7 @@
               v-if="value.href"
               :href="'https://github.com/' + value.href"
               target="_blank"
-              v-tooltip.right="{content: value.name + '&#39;s GitHub (새 탭)', delay: {show: 500, hide: 100}}"
+              v-tooltip.right="{content: `${value.name}'s GitHub (새 탭)`, delay: {show: 500, hide: 100}}"
             ) &nbsp;github.com/{{ value.href }}
 
       TopBtn
