@@ -10,11 +10,9 @@
 export default {
   name: 'topBtn',
 
-  data () {
-    return {
-      tooltip: '맨 위로',
-    }
-  },
+  data: _ => ({
+    tooltip: '맨 위로',
+  }),
 
 }
 </script>

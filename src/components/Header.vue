@@ -23,13 +23,15 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'header-el',
 
   computed: {
-    menuList() {
-      return this.$store.state.menuList
-    }
+    ...mapState([
+      'menuList',
+    ]),
   },
 
 }

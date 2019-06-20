@@ -26,11 +26,10 @@ Vue.use(VueGoogleMaps, {
 export default {
   name: "GoogleMap",
 
-  data() {
-    return {
-      adr: '인천대학교 송도캠퍼스 4호관 107호'
-    }
-  },
+  data: _ => ({
+    adr: '인천대학교 송도캠퍼스 4호관 107호',
+  }),
+
 }
 </script>
 

@@ -1,38 +1,48 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import Meta from 'vue-meta';
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Meta from 'vue-meta'
 
-import Home from '@/pages/Home';
-import Contact from '@/pages/Contact';
-import About from '@/pages/About';
+Vue.use(VueRouter)
+Vue.use(Meta)
 
-import Project from '@/components/Project';
+import Home from '@/pages/Home'
+import Contact from '@/pages/Contact'
+import About from '@/pages/About'
 
-Vue.use(VueRouter);
-Vue.use(Meta);
+import Project from '@/components/Project'
+import PostEntries from '@/statics/data/post.json'
+
+const postRoutes = Object.keys(PostEntries).map(section => {
+  const children = PostEntries[section].map(child => ({
+    path: `${child.id}`,
+    name: child.id,
+    component: resolve => require([`@/markdown/${child.id}.md`], resolve),
+  }))
+  return {
+    path: `/${section}`,
+    name: section,
+    component: Project,
+    children,
+  }
+})
 
 export default new VueRouter({
   mode: 'history',
-  routes: [{
-      path: '/',
-      name: 'home',
-      component: Home,
-      children: [{
-        path: '/project',
-        component: Project,
-        alias: [
-          // '@/markdown/*' 에 위치한 마크다운 파일명과 일치하게, 확장자는 빼고, 아래에 등록해야합니다.
-          '/INUM',
-          '/INUClub',
-          '/UnivCam',
-          '/INUBus',
-          '/Cafeteria'
-        ],
-      }, ],
-    },
+  functional: true,
+  routes: [
+    ...postRoutes,
     {
       path: '*',
       redirect: '/',
+    },
+    {
+      path: '/post',
+      redirect: '/',
+    },
+    {
+      path: '/',
+      name: 'home',
+      component: Home,
     },
     {
       path: '/about',
@@ -45,10 +55,15 @@ export default new VueRouter({
       component: Contact,
     },
   ],
-  scrollBehavior(to, from, savedPosition) {
-    return {
-      x: 0,
-      y: 0
-    };
+
+  scrollBehavior: (to, from, savedPosition) => {
+    if (savedPosition)
+      return savedPosition
+    else {
+      return {
+        x: 0,
+        y: 0,
+      }
+    }
   },
-});
+})

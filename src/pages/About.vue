@@ -29,20 +29,21 @@
 
 <script>
 import TopBtn from '@/components/misc/TopBtn'
+import { mapState } from 'vuex'
 
 export default {
   name: 'about',
 
   computed: {
-    memberList() {
-      return this.$store.state.memberList
-    },
-
+    ...mapState([
+      'memberList',
+    ]),
   },
 
   components: {
-    TopBtn
+    TopBtn,
   },
+
 }
 </script>
 

@@ -31,6 +31,7 @@ import Vue from 'vue'
 import Toasted from 'vue-toasted'
 import VueClipboard from 'vue-clipboard2'
 import GoogleMaps from '@/components/misc/GoogleMaps'
+import { mapState } from 'vuex'
 
 Vue.use(Toasted)
 Vue.use(VueClipboard)
@@ -39,14 +40,10 @@ export default {
   name: 'contact',
 
   computed: {
-    contactInfo() {
-      return this.$store.state.contactInfo
-    },
-
-    mail() {
-      return this.$store.state.mail
-    },
-
+    ...mapState([
+      'contactInfo',
+      'mail',
+    ]),
   },
 
   methods: {
@@ -54,9 +51,9 @@ export default {
       this.$toasted.show('이메일 주소가 복사되었습니다', {
         theme: "primary",
         position: "bottom-center",
-        duration : 2000
+        duration: 2000,
       })
-    }
+    },
   },
 
   components: {

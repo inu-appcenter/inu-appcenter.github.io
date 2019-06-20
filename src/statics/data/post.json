@@ -1,0 +1,28 @@
+{
+  "post": [{
+      "id": "INUM",
+      "src": "src/assets/dist/INUM.png",
+      "caption": "인천대 중고나라"
+    },
+    {
+      "id": "INUClub",
+      "src": "src/assets/dist/INUClub.png",
+      "caption": "동아리어플"
+    },
+    {
+      "id": "UnivCam",
+      "src": "https://spemer.com/img/works/univcam/thumb.png",
+      "caption": "UnivCam"
+    },
+    {
+      "id": "INUBus",
+      "src": "src/assets/dist/INUBus.png",
+      "caption": "인천대 버스알림"
+    },
+    {
+      "id": "Cafeteria",
+      "src": "src/assets/dist/Cafeteria.png",
+      "caption": "INU 카페테리아"
+    }
+  ]
+}

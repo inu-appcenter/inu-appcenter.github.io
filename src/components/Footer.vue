@@ -19,18 +19,18 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'footer-el',
 
   computed: {
-    thisYear() {
-      return this.$store.state.thisYear
-    },
-
-    snsList() {
-      return this.$store.state.snsList
-    },
+    ...mapState([
+      'thisYear',
+      'snsList',
+    ]),
   },
+
 }
 </script>
 

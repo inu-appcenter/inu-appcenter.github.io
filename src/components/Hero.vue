@@ -15,17 +15,16 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'hero',
 
   computed: {
-    nameKo() {
-      return this.$store.state.nameKo
-    },
-
-    nameEnFull() {
-      return this.$store.state.nameEnFull
-    },
+    ...mapState([
+      'nameKo',
+      'nameEnFull',
+    ]),
   },
 
 }

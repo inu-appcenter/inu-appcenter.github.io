@@ -16,7 +16,7 @@ export default {
       Kakao.PlusFriend.chat({
         plusFriendId: process.env.KAKAO_URL
       })
-    }
+    },
   },
 
 }
