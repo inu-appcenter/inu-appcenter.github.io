@@ -16,7 +16,7 @@
     "es6-promise": "^4.2.5",
     "event-source-polyfill": "0.0.16",
     "firebase": "^5.4.2",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-imagemin": "^4.1.0",
     "gulp-watch": "^5.0.1",
     "promise-polyfill": "8.1.0",
